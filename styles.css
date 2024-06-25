@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url('images/background-small.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  background-color: #606;
+  font-family: Arial, Verdana;
+  height: 100vh;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.light {
+  color: black;
+  background-color: #fcf;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 75%, transparent);
+
+  padding: 1em 2em 5em;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+h1 {
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.social-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 2em;
+}
+.social-links li {
+  display: inline-block;
+  margin: 0 0.25em;
+}
+.social-links a {
+  color: white;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+}
+.avatar {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  max-width: calc(100vw - 3em);
+  max-height: calc(100vw - 3em);
+  border: 1px white solid;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) { 
+  html, body {
+    background-image: url('images/background-medium.jpg');
+  }
+  header {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+  .social-links {
+    justify-self: end;
+    margin: 1em 0;
+  }
+  footer {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) { 
+  html, body {
+      background-image: url('images/background-large.jpg');
+  }
+}
