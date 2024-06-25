@@ -6,6 +6,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://kit.fontawesome.com/acbae9de89.js" crossorigin="anonymous"></script>
+  <script type="module">
+    if (!("anchorName" in document.documentElement.style)) {
+      import("https://unpkg.com/@oddbird/css-anchor-positioning");
+    }
+  </script>
 
   <!-- meta tags -->
 </head>
@@ -14,23 +19,35 @@
       <h1>Jennifer Gettings</h1>
 
    <ul class="social-links">
-    <li>
+    <!-- https://developer.chrome.com/blog/anchor-positioning-api#use_anchor_with_top-layer_elements_like_popover_and_dialog -->
+    <!-- Should be able to set each anchor with `anchor` property but it's not supported enough yet -->
+    <li class="tooltip-anchor" style="anchor-name: --linkedin-link" aria-details="linkedin-tooltip">
       <a href="http://www.linkedin.com/in/jen-gettings">
         <i class="fa-brands fa-linkedin" title="LinkedIn Profile"></i>
       </a>
+      <span class="tooltip" style="position-anchor: --linkedin-link" id="linkedin-tooltip">
+        <code>jen-gettings</code> on LinkedIn
+      </span>
     </li>
-    <li>
+    <li class="tooltip-anchor" style="anchor-name: --github-link" aria-details="github-tooltip">
       <a href="https://github.com/jgettings">
         <i class="fa-brands fa-github" title="Github Profile"></i>
       </a>
+      <span class="tooltip" style="position-anchor: --github-link" id="github-tooltip">
+        <code>jgettings</code> on GitHub
+      </span>
     </li>
-    <li>
+    <li class="tooltip-anchor" style="anchor-name: --instagram-link" aria-details="instagram-tooltip">
       <a href="https://www.instagram.com/pretzelcabin/">
         <i class="fa-brands fa-instagram" title="Instagram Profile"></i>
       </a>
+      <span class="tooltip" style="position-anchor: --instagram-link" id="instagram-tooltip">
+        <code>pretzelcabin</code> on Instagram
+      </span>
     </li>
    </ul>
   </header>
+
   <article>
       <!--
       Senior Software Engineer

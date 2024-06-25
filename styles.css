@@ -7,7 +7,7 @@ html, body {
   background: url('images/background-small.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
-  background-color: #606;
+  background-color: black;
   font-family: Arial, Verdana;
   height: 100vh;
 }
@@ -16,16 +16,11 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.light {
-  color: black;
-  background-color: #fcf;
-}
-
 header {
   background-color: rgba(0, 0, 0, 0.6);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 75%, transparent);
 
-  padding: 1em 2em 5em;
+  padding: 1em 2em 4em;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -37,6 +32,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+  text-align: center;
 }
 
 .social-links {
@@ -47,10 +43,26 @@ h1 {
 }
 .social-links li {
   display: inline-block;
-  margin: 0 0.25em;
+  padding: 0 0.25em;
 }
 .social-links a {
   color: white;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  justify-self: anchor-center;
+  top: calc(anchor(bottom) + .25em);
+  font-size: 1rem;
+  background: rgb(48, 48, 48);
+  padding: .75em;
+  border-radius: .5em;
+  color: white;
+  border: 1px white solid;
+}
+.tooltip-anchor:hover > .tooltip {
+  display: initial;
 }
 
 footer {
@@ -63,8 +75,26 @@ footer {
   height: 250px;
   max-width: calc(100vw - 3em);
   max-height: calc(100vw - 3em);
-  border: 1px white solid;
+  border: 2px white solid;
   object-fit: cover;
+}
+
+@media (prefers-color-scheme: light) {
+  html, body {
+    background-color: white;
+    color: black;
+  }
+  header {
+    background-color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 75%, transparent);
+  }
+  .social-links a {
+    color: black;
+  }
+  .tooltip {
+    background: white;
+    color: black;
+  }
 }
 
 @media (min-width: 768px) { 
@@ -78,6 +108,11 @@ footer {
   .social-links {
     justify-self: end;
     margin: 1em 0;
+  }
+  .tooltip {
+    justify-self: auto;
+    right: anchor(right);
+    top: calc(anchor(bottom) + .25em);
   }
   footer {
     text-align: left;
