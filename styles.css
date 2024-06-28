@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
 
-
 html, body {
   margin: 0;
   padding: 0;
@@ -13,18 +12,24 @@ html, body {
 }
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto;
+  align-content: space-between;
 }
 
 header {
   background-color: rgba(0, 0, 0, 0.6);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 75%, transparent);
-
   padding: 1em 2em 4em;
 
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+}
+@media (prefers-reduced-transparency: reduce) {
+  header {
+    background: darkslategray;
+    padding: 1em 2em;
+  }
 }
 
 h1 {
@@ -33,6 +38,72 @@ h1 {
   font-weight: bold;
   font-style: normal;
   text-align: center;
+}
+
+
+/* Transition animations for details on h1 and footer */
+.fly-in-wrapper {
+  overflow: hidden;
+}
+.fly-in-item-top,
+.fly-in-item-left {
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+.fly-in-item-top {
+  transform: translateY(-100%);
+}
+.fly-in-item-left {
+  transform: translateX(-100%);
+}
+
+.fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper .fly-in-item-top,
+.fly-in-item-top:is(:hover, :focus)
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+.fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper .fly-in-item-left,
+.fly-in-item-left:is(:hover, :focus) {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Just hide and show instead of animating */
+  .fly-in-item-top,
+  .fly-in-item-left {
+    transform: none;
+    transition: none;
+  }
+  .fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper :is(.fly-in-item-top, .fly-in-item-left),
+  :is(.fly-in-item-top, .fly-in-item-left):is(:hover, :focus) {
+    opacity: 1;
+  }
+}
+
+
+.details {
+  margin-left: 2em;
+}
+.details ul {
+  margin: 0;
+  width: fit-content;
+  list-style: none;
+  /* take it out of the normal document flow so the header doesn't stretch and make the fade look weird */
+  position: absolute;
+}
+.details li {
+  margin: 0.5em 1em;
+}
+
+.description-box {
+  font-size: 1rem;
+  background: rgb(48, 48, 48);
+  padding: .75em;
+  border-radius: .5em;
+  color: white;
+  border: 1px white solid;
 }
 
 .social-links {
@@ -54,20 +125,21 @@ h1 {
   position: absolute;
   justify-self: anchor-center;
   top: calc(anchor(bottom) + .25em);
-  font-size: 1rem;
-  background: rgb(48, 48, 48);
-  padding: .75em;
-  border-radius: .5em;
-  color: white;
-  border: 1px white solid;
 }
-.tooltip-anchor:hover > .tooltip {
+.tooltip-anchor:hover > .tooltip,
+.tooltip-anchor a:focus + .tooltip {
   display: initial;
 }
 
 footer {
   padding: 1em;
-  text-align: center;
+  /* text-align: center; */
+}
+footer figure {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  gap: 1em;
 }
 .avatar {
   border-radius: 50%;
@@ -91,7 +163,8 @@ footer {
   .social-links a {
     color: black;
   }
-  .tooltip {
+  .description-box {
+    border-color: gray;
     background: white;
     color: black;
   }
@@ -114,9 +187,9 @@ footer {
     right: anchor(right);
     top: calc(anchor(bottom) + .25em);
   }
-  footer {
+  /* footer {
     text-align: left;
-  }
+  } */
 }
 
 @media (min-width: 992px) { 
