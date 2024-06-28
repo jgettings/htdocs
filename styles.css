@@ -32,7 +32,7 @@ header {
   gap: 1em;
 }
 @media (prefers-reduced-transparency: reduce) {
-  header {
+  body header {
     background: darkslategray;
     padding: 1em 2em;
   }
