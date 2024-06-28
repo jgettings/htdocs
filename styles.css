@@ -157,6 +157,12 @@ figcaption .description-box {
   object-fit: cover;
 }
 
+.mobile-text {
+  display: inline;
+}
+.desktop-text {
+  display: none;
+}
 
 @media (min-width: 768px), (min-height: 576px) {
   html, body {
@@ -196,6 +202,13 @@ figcaption .description-box {
     grid-template-columns: auto 1fr;
     align-items: end;
     justify-items: start;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+  .desktop-text {
+    display: inline;
   }
 }
 
