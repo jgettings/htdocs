@@ -158,10 +158,12 @@ figcaption .description-box {
 }
 
 
-@media (min-width: 768px) { 
+@media (min-width: 768px), (min-height: 576px) {
   html, body {
     background-image: url('images/background-medium.jpg');
   }
+}
+@media (min-width: 768px) { 
   header {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -197,12 +199,11 @@ figcaption .description-box {
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px), (min-height: 744px) { 
   html, body {
       background-image: url('images/background-large.jpg');
   }
 }
-
 
 @media (prefers-color-scheme: light) {
   html, body {
