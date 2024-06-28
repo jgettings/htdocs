@@ -22,8 +22,14 @@ header {
   padding: 1em 2em 4em;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "title"
+    "social"
+    "details";
   justify-items: center;
+  gap: 1em;
 }
 @media (prefers-reduced-transparency: reduce) {
   header {
@@ -33,65 +39,60 @@ header {
 }
 
 h1 {
+  grid-area: title;
   font-family: "Playwrite US Trad", cursive;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  text-align: center;
+  margin-bottom: 0; /* spacing comes from grid gap */
 }
 
 
 /* Transition animations for details on h1 and footer */
-.fly-in-wrapper {
-  overflow: hidden;
-}
-.fly-in-item-top,
-.fly-in-item-left {
-  opacity: 0;
-  transition: transform 1s, opacity 1s;
-}
-.fly-in-item-top {
-  transform: translateY(-100%);
-}
-.fly-in-item-left {
-  transform: translateX(-100%);
-}
-
-.fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper .fly-in-item-top,
-.fly-in-item-top:is(:hover, :focus)
-{
-  opacity: 1;
-  transform: translateY(0);
-}
-.fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper .fly-in-item-left,
-.fly-in-item-left:is(:hover, :focus) {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  /* Just hide and show instead of animating */
+/* Only enable transitions for larger screens with hover ability */
+@media (hover:hover) and (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .fly-in-wrapper {
+    overflow: hidden;
+  }
   .fly-in-item-top,
   .fly-in-item-left {
-    transform: none;
-    transition: none;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
   }
-  .fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper :is(.fly-in-item-top, .fly-in-item-left),
-  :is(.fly-in-item-top, .fly-in-item-left):is(:hover, :focus) {
+  .fly-in-item-top {
+    transform: translateY(-100%);
+  }
+  .fly-in-item-left {
+    transform: translateX(-100%);
+  }
+  .fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper .fly-in-item-top,
+  .fly-in-trigger:is(:hover, :focus) + * + .fly-in-wrapper .fly-in-item-top,
+  .fly-in-item-top:is(:hover, :focus)
+  {
     opacity: 1;
+    transform: translateY(0);
+  }
+  .fly-in-trigger:is(:hover, :focus) + .fly-in-wrapper .fly-in-item-left,
+  .fly-in-trigger:is(:hover, :focus) + * + .fly-in-wrapper .fly-in-item-left,
+  .fly-in-item-left:is(:hover, :focus) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .details ul {
+    /* take it out of the normal document flow so the header doesn't stretch and make the fade look weird */
+    position: absolute;
   }
 }
 
 
 .details {
-  margin-left: 2em;
+  grid-area: details;
+  justify-self: stretch;
 }
 .details ul {
   margin: 0;
-  width: fit-content;
   list-style: none;
-  /* take it out of the normal document flow so the header doesn't stretch and make the fade look weird */
-  position: absolute;
 }
 .details li {
   margin: 0.5em 1em;
@@ -107,6 +108,7 @@ h1 {
 }
 
 .social-links {
+  grid-area: social;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -131,15 +133,19 @@ h1 {
   display: initial;
 }
 
+
 footer {
-  padding: 1em;
-  /* text-align: center; */
+  padding: 2em;
 }
 footer figure {
   display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: end;
+  grid-template-rows: auto auto;
+  justify-items: center;
   gap: 1em;
+  margin: 0;
+}
+figcaption .description-box {
+  font-size: 0.75em;
 }
 .avatar {
   border-radius: 50%;
@@ -150,6 +156,53 @@ footer figure {
   border: 2px white solid;
   object-fit: cover;
 }
+
+
+@media (min-width: 768px) { 
+  html, body {
+    background-image: url('images/background-medium.jpg');
+  }
+  header {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "title social"
+      "details .";
+    justify-items: stretch;
+    padding: 1em 3em 4em;
+  }
+  .social-links {
+    justify-self: end;
+    margin: 1em 0;
+  }
+  .tooltip {
+    justify-self: auto;
+    right: anchor(right);
+    top: calc(anchor(bottom) + .25em);
+  }
+  .details {
+    margin: 0 2em;
+  }
+  .details ul {
+    width: fit-content;
+  }
+  footer {
+    text-align: left;
+  }
+  footer figure {
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    align-items: end;
+    justify-items: start;
+  }
+}
+
+@media (min-width: 992px) { 
+  html, body {
+      background-image: url('images/background-large.jpg');
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   html, body {
@@ -167,33 +220,5 @@ footer figure {
     border-color: gray;
     background: white;
     color: black;
-  }
-}
-
-@media (min-width: 768px) { 
-  html, body {
-    background-image: url('images/background-medium.jpg');
-  }
-  header {
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-  }
-  .social-links {
-    justify-self: end;
-    margin: 1em 0;
-  }
-  .tooltip {
-    justify-self: auto;
-    right: anchor(right);
-    top: calc(anchor(bottom) + .25em);
-  }
-  /* footer {
-    text-align: left;
-  } */
-}
-
-@media (min-width: 992px) { 
-  html, body {
-      background-image: url('images/background-large.jpg');
   }
 }
