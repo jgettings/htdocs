@@ -1,0 +1,19 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  justify-self: anchor-center;
+  top: calc(anchor(bottom) + .25em);
+}
+.tooltip-anchor:hover > .tooltip,
+.tooltip-anchor a:focus + .tooltip {
+  display: initial;
+}
+
+
+@media (min-width: 768px) { 
+  .tooltip {
+    justify-self: auto;
+    right: anchor(right);
+    top: calc(anchor(bottom) + .25em);
+  }
+}

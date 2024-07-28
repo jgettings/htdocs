@@ -1,96 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en" />
-  <meta name="description" content="Jennifer Gettings - Senior Software Engineer portfolio landing page. Links to github, etc.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="description" content="Jennifer Gettings - Senior Software Engineer portfolio landing page. Links to github, etc.">
 
-	<title>Jennifer Gettings - Senior Software Engineer</title>
+    <title>Jennifer Gettings - Senior Software Engineer</title>
 
-  <!-- https://css-tricks.com/emoji-as-a-favicon/ -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+    <!-- https://css-tricks.com/emoji-as-a-favicon/ -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script src="https://kit.fontawesome.com/acbae9de89.js" crossorigin="anonymous"></script>
-  <script type="module">
-    if (!("anchorName" in document.documentElement.style)) {
-      import("https://unpkg.com/@oddbird/css-anchor-positioning");
-    }
-  </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="module">
+      if (!("anchorName" in document.documentElement.style)) {
+        import("https://unpkg.com/@oddbird/css-anchor-positioning");
+      }
+    </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-140RJXD7C4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-140RJXD7C4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-140RJXD7C4');
-  </script>
-</head>
-<body>
-  <header>
-    <h1 tabindex=0 class="fly-in-trigger">Jennifer Gettings</h1>
-
-    <ul class="social-links">
-      <!-- https://developer.chrome.com/blog/anchor-positioning-api#use_anchor_with_top-layer_elements_like_popover_and_dialog -->
-      <!-- Should be able to set each anchor with `anchor` property but it's not supported enough yet -->
-      <li class="tooltip-anchor" style="anchor-name: --linkedin-link" aria-details="linkedin-tooltip">
-        <a href="http://www.linkedin.com/in/jen-gettings">
-          <i class="fa-brands fa-linkedin" title="LinkedIn Profile"></i>
-        </a>
-        <span class="tooltip description-box" style="position-anchor: --linkedin-link" id="linkedin-tooltip">
-          <code>jen-gettings</code> on LinkedIn
-        </span>
-      </li>
-      <li class="tooltip-anchor" style="anchor-name: --github-link" aria-details="github-tooltip">
-        <a href="https://github.com/jgettings">
-          <i class="fa-brands fa-github" title="Github Profile"></i>
-        </a>
-        <span class="tooltip description-box" style="position-anchor: --github-link" id="github-tooltip">
-          <code>jgettings</code> on GitHub
-        </span>
-      </li>
-      <li class="tooltip-anchor" style="anchor-name: --instagram-link" aria-details="instagram-tooltip">
-        <a href="https://www.instagram.com/pretzelcabin/">
-          <i class="fa-brands fa-instagram" title="Instagram Profile"></i>
-        </a>
-        <span class="tooltip description-box" style="position-anchor: --instagram-link" id="instagram-tooltip">
-          <code>pretzelcabin</code> on Instagram
-        </span>
-      </li>
-    </ul>
-
-    <div class="details fly-in-wrapper">
-      <ul class="description-box fly-in-item-top">
-        <li>Senior Software Engineer</li>
-        <li>Location: Buffalo, NY</li>
-        <li>Preferred pronouns: she/her</li>
-        <li>Preferred name: Jen</li>
-      </ul>
-    </div>
-  </header>
-
-  <footer>
-    <figure>
-      <img tabindex=0 src="images/avatar.jpg" class="avatar fly-in-trigger"
-        alt="Photo of Jen - close up of face, taken in a cave on a black sand beach in Iceland"
-      >
-      <figcaption class="fly-in-wrapper">
-        <div class="description-box fly-in-item fly-in-item-left">
-          <p>
-            <em class="desktop-text">Left:</em><em class="mobile-text">Above:</em>
-            Jen at Hálsanefshellir Cave, Iceland
-          </p>
-          <p>
-            <em>Background:</em> Niagara Gorge, downstream of Niagara Falls near the Whirlpool Rapids on the US side
-          </p>
-        </div>
-      </figcaption>
-    </figure>
-  </footer>
-</body>
+      gtag('config', 'G-140RJXD7C4');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

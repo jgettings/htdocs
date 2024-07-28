@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url('images/background-small.jpg') no-repeat center top fixed;
+  background-size: cover;
+  color: white;
+  background-color: black;
+  font-family: Arial, Verdana;
+  height: 100vh;
+}
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+}
+
+@media (min-width: 768px), (min-height: 576px) {
+  html, body {
+    background-image: url('images/background-medium.jpg');
+  }
+}
+@media (min-width: 992px), (min-height: 744px) { 
+  html, body {
+      background-image: url('images/background-large.jpg');
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html, body {
+    background-color: white;
+    color: black;
+  }
+}
