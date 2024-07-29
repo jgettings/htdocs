@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background: url('images/background-small.jpg') no-repeat center top fixed;
+  background: url('/images/background-small.jpg') no-repeat center top fixed;
   background-size: cover;
   color: white;
   background-color: black;
@@ -23,18 +23,21 @@ html, body {
 }
 
 @media (min-width: 768px), (min-height: 576px) {
-  html, body {
-    background-image: url('images/background-medium.jpg');
+  html,
+  body {
+    background-image: url('/images/background-medium.jpg');
   }
 }
-@media (min-width: 992px), (min-height: 744px) { 
-  html, body {
-      background-image: url('images/background-large.jpg');
+@media (min-width: 992px), (min-height: 744px) {
+  html,
+  body {
+    background-image: url('/images/background-large.jpg');
   }
 }
 
 @media (prefers-color-scheme: light) {
-  html, body {
+  html,
+  body {
     background-color: white;
     color: black;
   }
