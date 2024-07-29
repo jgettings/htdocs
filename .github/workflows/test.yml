@@ -3,25 +3,20 @@ on: [push]
 
 jobs:
   build:
-    name: Test
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set Node.js
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
-
-      - name: Run install
-        uses: borales/actions-yarn@v4
         with:
-          cmd: install # will run `yarn install` command
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
-      - name: Build production bundle
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build:prod # will run `yarn build:prod` command
-      - name: Test the app
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: test # will run `yarn test` command
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - run: yarn install
+      - run: yarn build
+      - run: yarn test
