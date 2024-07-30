@@ -2,6 +2,8 @@
   "basics": {
     "name": "Jennifer Gettings",
     "label": "Senior Software Engineer",
+    "preferredName": "Jen",
+    "preferredPronouns": "she/her",
     "image": "https://jgettings.github.io/images/avatar.jpg",
     "email": "jennifer.wystup@gmail.com",
     "url": "https://jgettings.github.io",
