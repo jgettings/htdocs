@@ -1,0 +1,267 @@
+{
+  "basics": {
+    "name": "Jennifer Gettings",
+    "label": "Senior Software Engineer",
+    "image": "https://jgettings.github.io/images/avatar.jpg",
+    "email": "jennifer.wystup@gmail.com",
+    "url": "https://jgettings.github.io",
+    "summary": "Experienced Full Stack Developer with over 15 years of expertise in developing robust and accessible B2B SAAS web applications in startups and small teams. Strong focus on quality and adding tooling to ensure consistent quality and improvements.",
+    "location": {
+      "postalCode": "14213",
+      "city": "Buffalo",
+      "countryCode": "US",
+      "region": "NY"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jen-gettings",
+        "url": "http://www.linkedin.com/in/jen-gettings"
+      },
+      {
+        "network": "Github",
+        "username": "jgettings",
+        "url": "https://github.com/jgettings"
+      },
+      {
+        "network": "Instagram",
+        "username": "pretzelcabin",
+        "url": "https://www.instagram.com/pretzelcabin/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Wagmo",
+      "position": "Senior Engineer",
+      "url": "https://wagmo.io/",
+      "location": "Remote",
+      "companyDescription": "Pet insurance company selling wellness and insurance products to individual consumers directly and to employers as employee benefits.",
+      "stack": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Recoil",
+        "React Testing Library",
+        "Jest",
+        "Cypress",
+        "Formik",
+        "Yup",
+        "React Query",
+        "Storybook",
+        "CSS",
+        "JavaScript",
+        "Concourse CI",
+        "Sentry",
+        "GCP"
+      ],
+      "startDate": "2023-05-22",
+      "endDate": "2024-01-10",
+      "summary": "Description…",
+      "highlights": [
+        "Working primarily on the front-end with React, TypeScript, Tailwind CSS, and NextJS",
+        "Improved accessibility across the platform to better conform to WAI-ARIA standards",
+        "Led effort to add end to end tests through the most important user flows, saving time on each release without sacrificing confidence",
+        "Facilitated improved communications within the engineering team with iterative process improvements"
+      ]
+    },
+    {
+      "name": "Crisp",
+      "position": "Software Engineer",
+      "url": "https://www.gocrisp.com/",
+      "location": "Remote",
+      "companyDescription": "Helping to reduce food waste by surfacing supply chain data to companies that need it to determine production and shipping needs.",
+      "stack": [
+        "Apollo GraphQL",
+        "Highcharts",
+        "CSS",
+        "JavaScript",
+        "React Testing Library",
+        "React.js",
+        "Cypress.io",
+        "TypeScript",
+        "Kotlin",
+        "WCAG",
+        "Jest",
+        "FluentUI",
+        "Microsoft Excel Add-In",
+        "ESLint",
+        "Create React App",
+        "Storybook",
+        "GCP",
+        "FullStory",
+        "Pendo"
+      ],
+      "startDate": "2020-08-17",
+      "endDate": "2023-01-05",
+      "summary": "Description…",
+      "highlights": [
+        "storybook, eslint, add in",
+        "Working primarily on the front-end with React, TypeScript, and GraphQL",
+        "Improved observability of major business functionality with a new UI to track status and diagnose issues by working with stakeholders and iterating on various designs",
+        "Created UIs to allow users to connect to third-party systems using OAuth and other third party APIs",
+        "Helped build a Microsoft Excel Add-In with Fluent UI React so that users could more easily access their data on any operating system",
+        "Built public @gocrisp/store-locator npm package so that client companies could use their data to more efficiently create a store locator on their websites"
+      ]
+    },
+    {
+      "name": "Campus Labs",
+      "position": "Software Developer",
+      "url": "https://www.anthology.com/",
+      "location": "Buffalo, NY",
+      "companyDescription": "Higher education software. Worked on the Course Evaluations product.",
+      "stack": [
+        ".NET Framework",
+        ".NET Core",
+        "Microsoft SQL Server",
+        "Azure",
+        "Azure DevOps",
+        "VSTS",
+        "Azure Application Insights",
+        "NHibernate",
+        "Entity Framework",
+        "Backbone.js",
+        "AngularJS",
+        "React.js",
+        "TypeScript",
+        "React Query",
+        "Gulp",
+        "Grunt",
+        "Webpack",
+        "ESLint",
+        "Bootstrap",
+        "Azure Functions",
+        "React Testing Library",
+        "C#",
+        "Jest"
+      ],
+      "startDate": "2015-12-14",
+      "endDate": "2020-08-14",
+      "summary": "Description…",
+      "highlights": [
+        "Lead member of the Course Evaluations development team",
+        "Developed and implemented a new front-end architecture using React and Redux to iteratively move away from Backbone.js and AngularJS",
+        "Working across the full stack with .NET Framework, .NET Core, and Azure products including hosting, DevOps, Azure Functions and ServiceBus.",
+        "Led the team in adding more automated testing across the entire product using NUnit, Jasmine, Jest, and some custom scripts to create useful test data for manual testing"
+      ]
+    },
+    {
+      "name": "Studio, LLC",
+      "position": "Senior Software Developer",
+      "url": "https://www.studiolabs.com/",
+      "location": "Buffalo, NY",
+      "companyDescription": "Agency doing development work for small businesses. Microsites in wordpress and small ecommerce or other webapps.",
+      "stack": [
+        "PHP",
+        "Wordpress",
+        "Android Native",
+        "Symfony2",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "CSS",
+        "MySQL"
+      ],
+      "startDate": "2014-09-29",
+      "endDate": "2015-12-11",
+      "summary": "Description…",
+      "highlights": [
+        "Lead Developer on multiple concurrent projects, helping to improve legacy projects and mentor junior developers and interns",
+        "Working with a wide variety of languages and libraries, from native Android apps to wordpress-based microsites and Symfony-based webapps.",
+        "Led an initiative to standardize build tools across many projects that were very disjointed, either using no build tools or different tools per project, with the ultimate goal of making it so that anyone can easily pick up a project.",
+        "Implemented a Definition of Done across all projects to help standardize and improve development processes, including requiring code reviews to keep each other accountable. This has been a small part of a larger attempt at working together more as a team.",
+        "Helping to set up a Continuous Integration (Jenkins) server to run builds and deployments automatically, which has been a huge success in helping make sure tests are always run and makes deployments much easier."
+      ]
+    },
+    {
+      "name": "LocalEdge",
+      "position": "Software Developer II",
+      "url": "https://localedge.com/",
+      "location": "Buffalo, NY",
+      "companyDescription": "Digital media company owned by Hearst. Offering services for SEO, SMM, SEM, and custom websites to SMB customers. Mostly working on maintaining and creating internal tools to support these functions.",
+      "stack": [
+        "Java",
+        "Spring",
+        "Hibernate",
+        "Maven",
+        "JUnit",
+        "Backbone.js",
+        "AngularJS",
+        "Bootstrap",
+        "MongoDB",
+        "Oracle",
+        "CSS",
+        "jQuery",
+        "MySQL"
+      ],
+      "startDate": "2011-02-14",
+      "endDate": "2014-09-26",
+      "summary": "Description…",
+      "highlights": [
+        "Lead Developer on a small team for more than 1 year",
+        "Led an initiative to implement (Jasmine) unit tests in some javascript-heavy web apps, leading to less bugs and quicker development turnaround for maintenance tasks.",
+        "Implemented new system for entering sales contracts using Twitter Bootstrap, AngularJS and MongoDB",
+        "Successfully implemented a complete rewrite of a resource-intensive legacy process by leveraging heavy use of characterization tests to ensure no regressions"
+      ]
+    },
+    {
+      "name": "Flexovit Abrasives",
+      "position": "Applications Programmer",
+      "url": "hhttps://www.flexovitabrasives.com/",
+      "location": "Buffalo, NY",
+      "companyDescription": "Manufacturing company for abrasive products, mainly grinding discs. Maintaining legacy systems.",
+      "stack": [
+        "COBOL",
+        "Java Applets",
+        "Linux",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "PHP",
+        "Java"
+      ],
+      "startDate": "2007-06-25",
+      "endDate": "2011-02-11",
+      "summary": "Maintained legacy COBOL projects, adapting as necessary for the ever-changing needs of the business",
+      "highlights": [
+        "Press stuff",
+        "Part of an overall effort to create more user-friendly webapps as an interface for the existing COBOL infrastructure",
+        "Handled many user support requests and various linux server maintenance as part of a very small IT team",
+        "Created a javadoc-style documentation parser for the COBOL source code"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Nickel City Canine Rescue",
+      "position": "Foster",
+      "url": "https://nickelcitycaninerescue.org/",
+      "startDate": "2023-11-01",
+      "summary": "Fostering dogs as they look for their forever homes"
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University of New York at Fredonia",
+      "url": "https://www.fredonia.edu/",
+      "area": "Computer Information Systems; Business; Mathematics",
+      "studyType": "Bachelor",
+      "startDate": "2002-07-01",
+      "endDate": "2007-05-15",
+      "score": "3.3"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ]
+}
