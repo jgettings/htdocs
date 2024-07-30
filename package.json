@@ -10,7 +10,8 @@
     "lint": "eslint ./src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest --watch",
-    "test:ci": "jest"
+    "test:ci": "jest",
+    "validate": "node validate-schema.cjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@jsonresume/schema": "^1.2.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
