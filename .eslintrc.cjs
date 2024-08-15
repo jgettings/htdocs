@@ -5,7 +5,7 @@ module.exports = {
     es2020: true,
     jest: true,
   },
-  plugins: ['react-refresh', '@typescript-eslint', 'jest', 'promise'],
+  plugins: ['react-refresh', '@typescript-eslint', 'import', 'jest', 'promise'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -32,6 +32,7 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
+    tsconfigRootDir: './',
   },
   rules: {
     'react-refresh/only-export-components': [
@@ -74,6 +75,11 @@ module.exports = {
     tailwindcss: {
       callees: ['twMerge', 'createTheme'],
       classRegex: '^(class(Name)|theme)?$',
+    },
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+      },
     },
   },
 };
