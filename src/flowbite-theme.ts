@@ -16,6 +16,9 @@ const theme: CustomFlowbiteTheme = {
       },
     },
   },
+  popover: {
+    base: 'absolute z-20 inline-block w-max max-w-[90vw] bg-white outline-none border border-gray-200 rounded-lg shadow-sm dark:border-gray-600 dark:bg-gray-800',
+  },
 };
 
 export default theme;

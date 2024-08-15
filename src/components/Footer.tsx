@@ -1,35 +1,45 @@
-import { Avatar } from 'flowbite-react';
+import { Avatar, Popover } from 'flowbite-react';
+import { useMediaQuery } from 'usehooks-ts';
 import DescriptionBox from 'components/DescriptionBox';
-import FlyIn from 'components/FlyIn';
 
-const Footer: React.FC = () => (
-  <footer className="p-8 text-center md:text-left">
-    <figure className="grid grid-flow-row justify-items-center gap-4 md:grid-cols-[auto_1fr] md:items-end md:justify-items-start">
-      <Avatar
-        tabIndex={0}
-        className="peer"
-        img="images/avatar.jpg"
-        rounded
-        size="xl"
-        alt="Jen - close up of face, in a cave on a black sand beach in Iceland"
-      />
-      <FlyIn>
-        <figcaption>
-          <DescriptionBox>
-            <p className="my-2 text-xs">
-              <em className="hidden md:inline">Left: </em>
-              <em className="inline md:hidden">Above: </em>
-              Jen at Hálsanefshellir Cave, Iceland
-            </p>
-            <p className="my-2 text-xs">
-              <em>Background:</em> Niagara Gorge, downstream of Niagara Falls
-              near the Whirlpool Rapids on the US side
-            </p>
-          </DescriptionBox>
-        </figcaption>
-      </FlyIn>
-    </figure>
-  </footer>
-);
+const Footer: React.FC = () => {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
+
+  return (
+    <footer className="p-8 text-center md:text-left">
+      <figure className="md:w-fit">
+        <Popover
+          placement={isDesktop ? 'right' : 'top'}
+          trigger="click"
+          arrow={false}
+          content={
+            <figcaption>
+              <DescriptionBox>
+                <p className="my-2 text-xs">
+                  {isDesktop ? 'Left: ' : 'Below: '}
+                  Jen at Hálsanefshellir Cave, Iceland
+                </p>
+                <p className="my-2 text-xs">
+                  <em>Background:</em> Niagara Gorge, downstream of Niagara
+                  Falls near the Whirlpool Rapids on the US side
+                </p>
+              </DescriptionBox>
+            </figcaption>
+          }
+        >
+          <button type="button" title="click for photo info">
+            <Avatar
+              tabIndex={0}
+              img="images/avatar.jpg"
+              rounded
+              size="xl"
+              alt="Jen - close up of face, in a cave on a black sand beach in Iceland"
+            />
+          </button>
+        </Popover>
+      </figure>
+    </footer>
+  );
+};
 
 export default Footer;
