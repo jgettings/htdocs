@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     <header
       className={clsx(
         classes.layout,
-        'grid justify-items-center gap-4 bg-gradient-to-b from-white/75 px-8 pb-16 pt-4 dark:from-black/75 md:justify-items-stretch md:px-12',
+        'grid justify-items-center gap-4 bg-gradient-to-b from-white/75 px-8 pb-16 pt-4 md:justify-items-stretch md:px-12 dark:from-black/75',
       )}
     >
       <h1

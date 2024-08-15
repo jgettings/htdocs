@@ -6,4 +6,5 @@ https://jgettings.github.io/
 - [Vite](https://vitejs.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Flowbite React](https://flowbite-react.com/)
 - [Font Awesome](https://fontawesome.com/)

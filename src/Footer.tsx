@@ -6,7 +6,7 @@ const Footer: React.FC = () => (
   <footer className="p-8 text-center md:text-left">
     <figure className="grid grid-flow-row justify-items-center gap-4 md:grid-cols-[auto_1fr] md:items-end md:justify-items-start">
       <Avatar
-        tabIndex={0} // eslint-disable-line jsx-a11y/no-noninteractive-tabindex
+        tabIndex={0}
         className="peer"
         img="images/avatar.jpg"
         rounded
