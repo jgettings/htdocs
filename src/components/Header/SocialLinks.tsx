@@ -5,8 +5,12 @@ import {
   faInstagram,
   IconDefinition,
 } from '@fortawesome/free-brands-svg-icons';
-import Tooltip from 'components/Tooltip';
 import { basics } from 'data/resume.json';
+import clsx from 'clsx';
+
+type SocialLinksProps = {
+  className?: string;
+};
 
 const iconMap: Record<string, IconDefinition> = {
   LinkedIn: faLinkedin,
@@ -14,26 +18,22 @@ const iconMap: Record<string, IconDefinition> = {
   Instagram: faInstagram,
 };
 
-const SocialLinks: React.FC = () => (
-  <ul className="text-3xl md:my-9 md:justify-self-end [&>li]:inline-block [&>li]:px-2">
+const SocialLinks: React.FC<SocialLinksProps> = ({ className }) => (
+  <ul
+    className={clsx(
+      'text-3xl md:mb-3 md:mt-9 md:justify-self-end [&>li]:inline-block [&>li]:px-2',
+      className,
+    )}
+  >
     {basics.profiles.map(({ network, username, url }) => (
       <li key={network}>
-        <Tooltip
-          id={`${network}-tooltip`}
-          tooltipContent={
-            <>
-              <code>{username}</code> on {network}
-            </>
-          }
-        >
-          <a href={url}>
-            <FontAwesomeIcon
-              icon={iconMap[network]}
-              title={`${network} Profile`}
-            />
-            <span className="sr-only">{network} Profile</span>
-          </a>
-        </Tooltip>
+        <a href={url}>
+          <FontAwesomeIcon
+            icon={iconMap[network]}
+            title={`${username} on ${network}`}
+          />
+          <span className="sr-only">{network} Profile</span>
+        </a>
       </li>
     ))}
   </ul>
