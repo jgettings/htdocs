@@ -1,13 +1,16 @@
+import { Avatar } from 'flowbite-react';
 import DescriptionBox from './components/DescriptionBox';
 import FlyIn from './components/FlyIn';
 
 const Footer: React.FC = () => (
   <footer className="p-8 text-center md:text-left">
     <figure className="grid grid-flow-row justify-items-center gap-4 md:grid-cols-[auto_1fr] md:items-end md:justify-items-start">
-      <img
+      <Avatar
         tabIndex={0} // eslint-disable-line jsx-a11y/no-noninteractive-tabindex
-        src="images/avatar.jpg"
-        className="peer aspect-square w-60 rounded-full border-2 border-white object-cover"
+        className="peer"
+        img="images/avatar.jpg"
+        rounded
+        size="xl"
         alt="Jen - close up of face, in a cave on a black sand beach in Iceland"
       />
       <FlyIn>
