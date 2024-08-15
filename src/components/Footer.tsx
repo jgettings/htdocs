@@ -1,6 +1,6 @@
 import { Avatar } from 'flowbite-react';
-import DescriptionBox from './components/DescriptionBox';
-import FlyIn from './components/FlyIn';
+import DescriptionBox from 'components/DescriptionBox';
+import FlyIn from 'components/FlyIn';
 
 const Footer: React.FC = () => (
   <footer className="p-8 text-center md:text-left">

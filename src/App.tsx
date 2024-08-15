@@ -1,6 +1,7 @@
 import { Flowbite } from 'flowbite-react';
-import Footer from './Footer';
-import Header from './Header';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+
 import theme from './flowbite-theme';
 
 const App: React.FC = () => (
