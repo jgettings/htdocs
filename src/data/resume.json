@@ -38,7 +38,7 @@
       "position": "Senior Engineer",
       "url": "https://wagmo.io/",
       "location": "Remote",
-      "companyDescription": "Pet insurance company selling wellness and insurance products to individual consumers directly and to employers as employee benefits.",
+      "summary": "Pet insurance company selling wellness and insurance products to individual consumers directly and to employers as employee benefits.",
       "stack": [
         "React",
         "Next.js",
@@ -55,11 +55,18 @@
         "JavaScript",
         "Concourse CI",
         "Sentry",
-        "GCP"
+        "GCP",
+        "Firebase",
+        "MUI",
+        "Tailwind CSS",
+        "Github",
+        "Jira",
+        "Confluence",
+        "GSuite",
+        "Builder.io"
       ],
       "startDate": "2023-05-22",
       "endDate": "2024-01-10",
-      "summary": "Description…",
       "highlights": [
         "Working primarily on the front-end with React, TypeScript, Tailwind CSS, and NextJS",
         "Improved accessibility across the platform to better conform to WAI-ARIA standards",
@@ -72,7 +79,7 @@
       "position": "Software Engineer",
       "url": "https://www.gocrisp.com/",
       "location": "Remote",
-      "companyDescription": "Helping to reduce food waste by surfacing supply chain data to companies that need it to determine production and shipping needs.",
+      "summary": "Helping to reduce food waste by surfacing supply chain data to companies that need it to determine production and shipping needs.",
       "stack": [
         "Apollo GraphQL",
         "Highcharts",
@@ -85,20 +92,33 @@
         "Kotlin",
         "WCAG",
         "Jest",
-        "FluentUI",
+        "Microsoft FluentUI",
         "Microsoft Excel Add-In",
         "ESLint",
         "Create React App",
         "Storybook",
         "GCP",
         "FullStory",
-        "Pendo"
+        "Pendo",
+        "Launch Darkly",
+        "Segment",
+        "DataDog",
+        "Github",
+        "Jira",
+        "Confluence",
+        "Notion",
+        "GSuite",
+        "Postgres",
+        "Kubernetes",
+        "Integrations:",
+        "Shopify",
+        "Azure Blob Storage - OAuth",
+        "Snowflake",
+        "Google Maps"
       ],
       "startDate": "2020-08-17",
       "endDate": "2023-01-05",
-      "summary": "Description…",
       "highlights": [
-        "storybook, eslint, add in",
         "Working primarily on the front-end with React, TypeScript, and GraphQL",
         "Improved observability of major business functionality with a new UI to track status and diagnose issues by working with stakeholders and iterating on various designs",
         "Created UIs to allow users to connect to third-party systems using OAuth and other third party APIs",
@@ -111,7 +131,7 @@
       "position": "Software Developer",
       "url": "https://www.anthology.com/",
       "location": "Buffalo, NY",
-      "companyDescription": "Higher education software. Worked on the Course Evaluations product.",
+      "summary": "Higher education software. Worked on the Course Evaluations product.",
       "stack": [
         ".NET Framework",
         ".NET Core",
@@ -125,6 +145,9 @@
         "Backbone.js",
         "AngularJS",
         "React.js",
+        "Redux",
+        "Enzyme",
+        "Mocha",
         "TypeScript",
         "React Query",
         "Gulp",
@@ -135,11 +158,19 @@
         "Azure Functions",
         "React Testing Library",
         "C#",
-        "Jest"
+        "Jest",
+        "Azure Functions",
+        "Azure Service Bus Queues",
+        "Azure Blob Storage",
+        "jQuery",
+        "Launch Darkly",
+        "Azure Blob Storage",
+        "Azure Storage Queues",
+        "Azure Table Storage",
+        "Mailchimp"
       ],
       "startDate": "2015-12-14",
       "endDate": "2020-08-14",
-      "summary": "Description…",
       "highlights": [
         "Lead member of the Course Evaluations development team",
         "Developed and implemented a new front-end architecture using React and Redux to iteratively move away from Backbone.js and AngularJS",
@@ -152,7 +183,7 @@
       "position": "Senior Software Developer",
       "url": "https://www.studiolabs.com/",
       "location": "Buffalo, NY",
-      "companyDescription": "Agency doing development work for small businesses. Microsites in wordpress and small ecommerce or other webapps.",
+      "summary": "Agency doing development work for small businesses. Microsites in wordpress and small ecommerce or other webapps.",
       "stack": [
         "PHP",
         "Wordpress",
@@ -162,11 +193,12 @@
         "jQuery",
         "Bootstrap",
         "CSS",
-        "MySQL"
+        "MySQL",
+        "Jenkins",
+        "SSH"
       ],
       "startDate": "2014-09-29",
       "endDate": "2015-12-11",
-      "summary": "Description…",
       "highlights": [
         "Lead Developer on multiple concurrent projects, helping to improve legacy projects and mentor junior developers and interns",
         "Working with a wide variety of languages and libraries, from native Android apps to wordpress-based microsites and Symfony-based webapps.",
@@ -180,7 +212,7 @@
       "position": "Software Developer II",
       "url": "https://localedge.com/",
       "location": "Buffalo, NY",
-      "companyDescription": "Digital media company owned by Hearst. Offering services for SEO, SMM, SEM, and custom websites to SMB customers. Mostly working on maintaining and creating internal tools to support these functions.",
+      "summary": "Digital media company owned by Hearst. Offering services for SEO, SMM, SEM, and custom websites to SMB customers. Mostly working on maintaining and creating internal tools to support these functions.",
       "stack": [
         "Java",
         "Spring",
@@ -198,7 +230,6 @@
       ],
       "startDate": "2011-02-14",
       "endDate": "2014-09-26",
-      "summary": "Description…",
       "highlights": [
         "Lead Developer on a small team for more than 1 year",
         "Led an initiative to implement (Jasmine) unit tests in some javascript-heavy web apps, leading to less bugs and quicker development turnaround for maintenance tasks.",
@@ -211,7 +242,7 @@
       "position": "Applications Programmer",
       "url": "hhttps://www.flexovitabrasives.com/",
       "location": "Buffalo, NY",
-      "companyDescription": "Manufacturing company for abrasive products, mainly grinding discs. Maintaining legacy systems.",
+      "summary": "Manufacturing company for abrasive products, mainly grinding discs. Maintaining legacy systems.",
       "stack": [
         "COBOL",
         "Java Applets",
@@ -224,9 +255,8 @@
       ],
       "startDate": "2007-06-25",
       "endDate": "2011-02-11",
-      "summary": "Maintained legacy COBOL projects, adapting as necessary for the ever-changing needs of the business",
       "highlights": [
-        "Press stuff",
+        "Maintained legacy COBOL projects, adapting as necessary for the ever-changing needs of the business",
         "Part of an overall effort to create more user-friendly webapps as an interface for the existing COBOL infrastructure",
         "Handled many user support requests and various linux server maintenance as part of a very small IT team",
         "Created a javadoc-style documentation parser for the COBOL source code"
@@ -240,6 +270,21 @@
       "url": "https://nickelcitycaninerescue.org/",
       "startDate": "2023-11-01",
       "summary": "Fostering dogs as they look for their forever homes"
+    },
+    {
+      "organization": "The Tool Library",
+      "position": "Dare to Repair Cafe Fixer",
+      "url": "https://thetoollibrary.org/daretorepair/",
+      "startDate": "2022-07-01",
+      "summary": "Help people fix broken household items to save them from the landfill"
+    },
+    {
+      "organization": "Big Big Table Community Cafe",
+      "position": "Volunteer",
+      "url": "https://www.bigbigtable.org/",
+      "startDate": "2023-01-15",
+      "endDate": "2023-05-20",
+      "summary": "Serving food in a pay-as-you-can cafe"
     }
   ],
   "education": [
@@ -265,5 +310,10 @@
       "language": "English",
       "fluency": "Native speaker"
     }
-  ]
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "version": "v1.0.0",
+    "lastModified": "2024-07-08T15:53:00"
+  }
 }
