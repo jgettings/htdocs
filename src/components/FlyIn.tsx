@@ -30,9 +30,9 @@ const FlyIn: React.FC<FlyInProps> = ({ children, className, down = false }) => {
   return (
     <div
       className={clsx(classes, className, {
-        'can-hover:*:translate-y-[-100%] peer-hover:*:translate-y-0 peer-focus:*:translate-y-0':
+        'peer-hover:*:translate-y-0 peer-focus:*:translate-y-0 can-hover:*:translate-y-[-100%]':
           down,
-        'can-hover:*:translate-x-[-100%] peer-hover:*:translate-x-0 peer-focus:*:translate-x-0':
+        'peer-hover:*:translate-x-0 peer-focus:*:translate-x-0 can-hover:*:translate-x-[-100%]':
           !down,
       })}
     >

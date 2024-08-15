@@ -6,6 +6,10 @@ const config = {
   printWidth: 80,
   useTabs: false,
   endOfLine: 'auto',
+  plugins: ['prettier-plugin-tailwindcss'],
+  // tailwindcss
+  tailwindAttributes: ['theme'],
+  tailwindFunctions: ['twMerge', 'createTheme'],
 };
 
 module.exports = config;

@@ -19,14 +19,14 @@ const Header: React.FC = () => {
     <header
       className={clsx(
         classes.layout,
-        'grid gap-4 justify-items-center md:justify-items-stretch pt-4 px-8 pb-16 md:px-12 bg-gradient-to-b from-white/75 dark:from-black/75',
+        'grid justify-items-center gap-4 bg-gradient-to-b from-white/75 px-8 pb-16 pt-4 dark:from-black/75 md:justify-items-stretch md:px-12',
       )}
     >
       <h1
         tabIndex={0} // eslint-disable-line jsx-a11y/no-noninteractive-tabindex
         className={clsx(
           classes.title,
-          'z-10 font-heading peer text-3xl font-bold mt-5 leading-[4rem]',
+          'peer z-10 mt-5 font-heading text-3xl font-bold leading-[4rem]',
         )}
       >
         {name}
@@ -38,10 +38,10 @@ const Header: React.FC = () => {
         down
         className={clsx(
           classes.details,
-          'justify-self-stretch md:mx-8 leading-none',
+          'justify-self-stretch leading-none md:mx-8',
         )}
       >
-        <DescriptionBox className="md:w-fit absolute">
+        <DescriptionBox className="absolute md:w-fit">
           <ul className="[&>li]:mx-4 [&>li]:my-2">
             <li>{title}</li>
             <li>

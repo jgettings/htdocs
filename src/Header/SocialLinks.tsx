@@ -23,7 +23,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ className }) => (
   <ul
     className={clsx(
       className,
-      'text-3xl md:justify-self-end md:my-9 [&>li]:inline-block [&>li]:px-2',
+      'text-3xl md:my-9 md:justify-self-end [&>li]:inline-block [&>li]:px-2',
     )}
   >
     {basics.profiles.map(({ network, username, url }) => (

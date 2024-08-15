@@ -20,6 +20,7 @@ module.exports = {
     'airbnb',
     'airbnb/hooks',
     'airbnb-typescript',
+    'plugin:tailwindcss/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'jest.config.js'],
   parser: '@typescript-eslint/parser',
@@ -69,6 +70,10 @@ module.exports = {
   settings: {
     react: {
       version: 'detect',
+    },
+    tailwindcss: {
+      callees: ['twMerge', 'createTheme'],
+      classRegex: '^(class(Name)|theme)?$',
     },
   },
 };
