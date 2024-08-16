@@ -3646,6 +3646,14 @@ jest-mock@^29.7.0:
     "@types/node" "*"
     jest-util "^29.7.0"
 
+jest-nyancat-reporter@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jest-nyancat-reporter/-/jest-nyancat-reporter-2.0.0.tgz#72b669d2965ba492bdeda9a3d6d0b363ef12bbb8"
+  integrity sha512-3aCX9UKwhWDgQ7nU1rtt21fBb1dcNlgRIXxFapYWCFr7Bug3nGcZRRyDJ4r601YmMeUBwjHQ/S27hLp6rXSkvA==
+  dependencies:
+    ms "^2.1.1"
+    supports-color "^7.0.0"
+
 jest-pnp-resolver@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.3.tgz#930b1546164d4ad5937d5540e711d4d38d4cad2e"
@@ -5054,7 +5062,7 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-supports-color@^7.1.0:
+supports-color@^7.0.0, supports-color@^7.1.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
