@@ -6,15 +6,15 @@ const Footer: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width: 768px)');
 
   return (
-    <footer className="p-8 text-center md:text-left">
-      <figure className="md:w-fit">
+    <footer className="p-8 text-center md:fixed md:bottom-8 md:left-8 md:z-10 md:p-0 md:text-left">
+      <figure>
         <Popover
           placement={isDesktop ? 'right' : 'top'}
           trigger="click"
           arrow={false}
           content={
             <figcaption>
-              <DescriptionBox>
+              <DescriptionBox className="m-0">
                 <p className="my-2 text-xs">
                   {isDesktop ? 'Left: ' : 'Below: '}
                   Jen at Hálsanefshellir Cave, Iceland

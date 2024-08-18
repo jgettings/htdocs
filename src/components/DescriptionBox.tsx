@@ -1,6 +1,7 @@
-import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
+import { tw } from '../tailwindUtils';
 
-type DescriptionBoxProps = {
+export type DescriptionBoxProps = {
   children: React.ReactNode;
   className?: string;
 } & React.HTMLProps<HTMLDivElement>;
@@ -10,11 +11,10 @@ const DescriptionBox: React.FC<DescriptionBoxProps> = ({
   children,
   ...divProps
 }) => {
-  const baseClasses =
-    'bg-white dark:bg-dkgray text-base p-3 border-2 rounded-lg border-gray-500 dark:border-white text-black dark:text-white';
+  const baseClasses = tw`m-2 max-w-xl rounded-lg border-2 border-gray-500 bg-white p-3 text-base text-black md:w-fit dark:border-white dark:bg-dkgray dark:text-white [&>li]:mx-4 [&>li]:my-2`;
 
   return (
-    <div className={clsx(baseClasses, className)} {...divProps}>
+    <div className={twMerge(baseClasses, className)} {...divProps}>
       {children}
     </div>
   );

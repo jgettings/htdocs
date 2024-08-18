@@ -1,0 +1,16 @@
+.indicator {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-delay: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}

@@ -59,6 +59,10 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-wrap-multilines': 'off',
+    // turned off because they were conflicting with prettier
+    'no-confusing-arrow': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'function-paren-newline': 'off',
   },
   overrides: [
     {

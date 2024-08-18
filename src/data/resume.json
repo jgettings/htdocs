@@ -8,6 +8,11 @@
     "email": "jennifer.wystup@gmail.com",
     "url": "https://jgettings.github.io",
     "summary": "Experienced Full Stack Developer with over 15 years of expertise in developing robust and accessible B2B SAAS web applications in startups and small teams. Strong focus on quality and adding tooling to ensure consistent quality and improvements.",
+    "highlights": [
+      "Experience on a wide variety of products and teams: Startups, SaaS, Internal tooling, and client work. Fully remote for the past 4 years.",
+      "Specializing on frontend work in React and Typescript for the past 7 years, prior to that was all full stack in a few different languages.",
+      "I enjoy the challenges of frontend work - making things nice to use for everyone even when it's difficult to anticipate how someone will use a feature and advocating for accessibility."
+    ],
     "location": {
       "postalCode": "14213",
       "city": "Buffalo",

@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { twMerge } from 'tailwind-merge';
 import {
   faLinkedin,
   faGithub,
@@ -6,7 +7,6 @@ import {
   IconDefinition,
 } from '@fortawesome/free-brands-svg-icons';
 import { basics } from 'data/resume.json';
-import clsx from 'clsx';
 
 type SocialLinksProps = {
   className?: string;
@@ -20,7 +20,7 @@ const iconMap: Record<string, IconDefinition> = {
 
 const SocialLinks: React.FC<SocialLinksProps> = ({ className }) => (
   <ul
-    className={clsx(
+    className={twMerge(
       'text-3xl md:mb-3 md:mt-9 md:justify-self-end [&>li]:inline-block [&>li]:px-2',
       className,
     )}
