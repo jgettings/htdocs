@@ -12,7 +12,7 @@ const DescriptionBox: React.FC<DescriptionBoxProps> = ({
   children,
   ...divProps
 }) => {
-  const baseClasses = tw`m-2 md:w-fit max-w-xl text-base`;
+  const baseClasses = tw`m-2 max-w-xl text-base md:w-fit`;
   // TODO fix spacing on avatar popup
 
   return (
