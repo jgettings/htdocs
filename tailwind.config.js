@@ -1,4 +1,5 @@
 const flowbite = require('flowbite-react/tailwind');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -18,6 +19,16 @@ export default {
           raw: '(hover: hover) and (min-width: 768px) and (prefers-reduced-motion: no-preference)',
         },
       },
+      animation: {
+        'fade-in': 'fadeIn 3s ease-in-out',
+      },
+      keyframes: () => ({
+        fadeIn: {
+          '0%': { opacity: 0, display: 'none' },
+          '1%': { opacity: 0, display: 'inline' },
+          '100%': { opacity: 1, display: 'inline' },
+        },
+      }),
     },
     screens: {
       md: '768px',
@@ -26,7 +37,24 @@ export default {
     },
   },
   darkMode: 'media',
-  plugins: [flowbite.plugin()],
+  plugins: [
+    flowbite.plugin(),
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          'animation-delay': (value) => {
+            return {
+              'animation-delay': value,
+              'animation-fill-mode': 'forwards',
+            };
+          },
+        },
+        {
+          values: theme('transitionDelay'),
+        },
+      );
+    }),
+  ],
   future: {
     hoverOnlyWhenSupported: true,
   },

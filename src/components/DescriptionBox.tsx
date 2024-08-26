@@ -1,3 +1,4 @@
+import { Card } from 'flowbite-react';
 import { twMerge } from 'tailwind-merge';
 import { tw } from '../tailwindUtils';
 
@@ -11,12 +12,13 @@ const DescriptionBox: React.FC<DescriptionBoxProps> = ({
   children,
   ...divProps
 }) => {
-  const baseClasses = tw`m-2 max-w-xl rounded-lg border-2 border-gray-500 bg-white p-3 text-base text-black md:w-fit dark:border-white dark:bg-dkgray dark:text-white [&>li]:mx-4 [&>li]:my-2`;
+  const baseClasses = tw`m-2 md:w-fit max-w-xl text-base`;
+  // TODO fix spacing on avatar popup
 
   return (
-    <div className={twMerge(baseClasses, className)} {...divProps}>
+    <Card className={twMerge(baseClasses, className)} {...divProps}>
       {children}
-    </div>
+    </Card>
   );
 };
 

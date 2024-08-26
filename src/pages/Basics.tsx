@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import DescriptionBox from 'components/DescriptionBox';
 import QuoteDescriptionBox from 'components/QuoteDescriptionBox';
 import data from 'data/index';
@@ -20,7 +21,9 @@ const Basics: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <DescriptionBox>{summary}</DescriptionBox>
+      <Parallax translateX={[100, 0]}>
+        <DescriptionBox>{summary}</DescriptionBox>
+      </Parallax>
       <DescriptionBox>
         <ul>
           <li>{label}</li>
@@ -45,5 +48,8 @@ const Basics: React.FC = () => {
 };
 
 // TODO cuter layout, maybe some silly parallax scrolling
+
+// TODO DescriptionBox should just be a custom card style in flowbite react
+// TODO summary should be in meta description
 
 export default Basics;

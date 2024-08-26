@@ -11,7 +11,7 @@
     "highlights": [
       "Experience on a wide variety of products and teams: Startups, SaaS, Internal tooling, and client work. Fully remote for the past 4 years.",
       "Specializing on frontend work in React and Typescript for the past 7 years, prior to that was all full stack in a few different languages.",
-      "I enjoy the challenges of frontend work - making things nice to use for everyone even when it's difficult to anticipate how someone will use a feature and advocating for accessibility."
+      "I enjoy the challenges of frontend work, especially making things nice to use for everyone even when it's difficult to anticipate how someone will use a feature and advocating for accessibility."
     ],
     "location": {
       "postalCode": "14213",
@@ -76,7 +76,8 @@
         "Working primarily on the front-end with React, TypeScript, Tailwind CSS, and NextJS",
         "Improved accessibility across the platform to better conform to WAI-ARIA standards",
         "Led effort to add end to end tests through the most important user flows, saving time on each release without sacrificing confidence",
-        "Facilitated improved communications within the engineering team with iterative process improvements"
+        "Facilitated improved communications within the engineering team with iterative process improvements",
+        "OKR to reduce cluttered error logs and fix longstanding bugs in the process"
       ]
     },
     {
