@@ -10,7 +10,7 @@ const App: React.FC = () => (
   <Flowbite theme={{ theme }}>
     <ParallaxProvider>
       <Header />
-      {import.meta.env.MODE === 'developfment' ? (
+      {import.meta.env.MODE === 'development' ? (
         <main>
           <ScrollPages>
             <Basics />

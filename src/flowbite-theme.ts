@@ -19,6 +19,11 @@ const theme: CustomFlowbiteTheme = {
   popover: {
     base: 'absolute z-20 inline-block w-max max-w-[90vw] bg-white outline-none border border-gray-200 rounded-lg shadow-sm dark:border-gray-600 dark:bg-gray-800',
   },
+  card: {
+    root: {
+      base: 'flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 shadow-lg shadow-gray-700',
+    },
+  },
 };
 
 export default theme;

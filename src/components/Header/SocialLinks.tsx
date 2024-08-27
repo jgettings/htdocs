@@ -1,21 +1,17 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { twMerge } from 'tailwind-merge';
-import {
-  faLinkedin,
-  faGithub,
-  faInstagram,
-  IconDefinition,
-} from '@fortawesome/free-brands-svg-icons';
+import { IconType } from 'react-icons';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+
 import { basics } from 'data/resume.json';
 
 type SocialLinksProps = {
   className?: string;
 };
 
-const iconMap: Record<string, IconDefinition> = {
-  LinkedIn: faLinkedin,
-  Github: faGithub,
-  Instagram: faInstagram,
+const iconMap: Record<string, IconType> = {
+  LinkedIn: FaLinkedin,
+  Github: FaGithub,
+  Instagram: FaInstagram,
 };
 
 const SocialLinks: React.FC<SocialLinksProps> = ({ className }) => (
@@ -28,10 +24,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ className }) => (
     {basics.profiles.map(({ network, username, url }) => (
       <li key={network}>
         <a href={url}>
-          <FontAwesomeIcon
-            icon={iconMap[network]}
-            title={`${username} on ${network}`}
-          />
+          {iconMap[network]({ title: `${username} on ${network}` })}
           <span className="sr-only">{network} Profile</span>
         </a>
       </li>

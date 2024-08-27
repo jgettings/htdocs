@@ -13,4 +13,4 @@ The main goal here is to get some basic info on a static page while creating a p
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Flowbite React](https://flowbite-react.com/)
-- [Font Awesome](https://fontawesome.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)

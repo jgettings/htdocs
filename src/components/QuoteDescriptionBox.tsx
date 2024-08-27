@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 import DescriptionBox, { DescriptionBoxProps } from 'components/DescriptionBox';
 
 const QuoteDescriptionBox: React.FC<DescriptionBoxProps> = ({
@@ -8,9 +7,11 @@ const QuoteDescriptionBox: React.FC<DescriptionBoxProps> = ({
   ...rest
 }) => (
   <DescriptionBox {...rest}>
-    <FontAwesomeIcon size="xl" className="mr-2" icon={faQuoteLeft} />
-    {children}
-    <FontAwesomeIcon size="xl" className="ml-2" icon={faQuoteRight} />
+    <div>
+      <RiDoubleQuotesL size="2em" className="mr-2 inline" />
+      {children}
+      <RiDoubleQuotesR size="2em" className="mr-2 inline" />
+    </div>
   </DescriptionBox>
 );
 

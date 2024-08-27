@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import ScrollPromptIcon from './ScrollPromptIcon';
 import { tw } from '../../tailwindUtils';
@@ -13,8 +14,10 @@ const ScrollPages: React.FC<ScrollPagesProps> = ({ children }) => (
     <div className={classes}>
       <ScrollPromptIcon />
     </div>
-    {children.map((child) => (
-      <div className={classes}>{child}</div>
+    {children.map((child, i) => (
+      <div key={i} className={classes}>
+        {child}
+      </div>
     ))}
   </div>
 );
