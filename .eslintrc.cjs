@@ -72,6 +72,7 @@ module.exports = {
       files: ['src/**/*.test.*', 'jest-setup.ts'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
       },
     },
   ],
