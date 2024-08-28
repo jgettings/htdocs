@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           arrow={false}
           content={
             <figcaption>
-              <Card className="m-0">
+              <Card className="m-0 min-w-96 [&>*]:gap-2 [&>*]:p-4">
                 <p className="my-2 text-xs">
                   {isDesktop ? 'Left: ' : 'Below: '}
                   Jen at Hálsanefshellir Cave, Iceland
