@@ -15,13 +15,13 @@ export default {
   },
   moduleDirectories: ['node_modules', '<rootDir>'],
   setupFilesAfterEnv: ['./src/jest-setup.ts'],
-  injectGlobals: false,
-  reporters: [
-    [
-      "jest-nyancat-reporter",
-      {
-        "suppressErrorReporter": false
-      }
-    ]
-  ]
+  // injectGlobals: false,
+  // reporters: [
+  //   [
+  //     'jest-nyancat-reporter',
+  //     {
+  //       suppressErrorReporter: false,
+  //     },
+  //   ],
+  // ],
 };
