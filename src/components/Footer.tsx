@@ -1,6 +1,5 @@
-import { Avatar, Popover } from 'flowbite-react';
+import { Avatar, Popover, Card } from 'flowbite-react';
 import { useMediaQuery } from 'usehooks-ts';
-import DescriptionBox from 'components/DescriptionBox';
 
 const Footer: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width: 768px)');
@@ -14,7 +13,7 @@ const Footer: React.FC = () => {
           arrow={false}
           content={
             <figcaption>
-              <DescriptionBox className="m-0">
+              <Card className="m-0">
                 <p className="my-2 text-xs">
                   {isDesktop ? 'Left: ' : 'Below: '}
                   Jen at Hálsanefshellir Cave, Iceland
@@ -23,7 +22,7 @@ const Footer: React.FC = () => {
                   <em>Background:</em> Niagara Gorge, downstream of Niagara
                   Falls near the Whirlpool Rapids on the US side
                 </p>
-              </DescriptionBox>
+              </Card>
             </figcaption>
           }
         >
@@ -41,5 +40,6 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
+// TODO fix spacing on avatar popup
 
 export default Footer;

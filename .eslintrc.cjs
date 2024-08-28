@@ -64,6 +64,8 @@ module.exports = {
     'implicit-arrow-linebreak': 'off',
     'function-paren-newline': 'off',
     'object-curly-newline': 'off',
+    'react/jsx-indent': 'off',
+    '@typescript-eslint/indent': 'off',
   },
   overrides: [
     {

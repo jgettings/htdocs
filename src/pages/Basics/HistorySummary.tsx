@@ -1,22 +1,16 @@
 import React from 'react';
-import DescriptionBox from 'components/DescriptionBox';
+import { Card } from 'flowbite-react';
 import { FaLinkedin } from 'react-icons/fa';
-import data from 'data/index';
 
-const HistorySummary: React.FC = () => {
-  const { basics } = data;
-  if (basics === undefined) {
-    return null;
-  }
+type HistorySummaryProps = {
+  linkedInUrl: string | undefined;
+};
 
-  const linkedInUrl = basics.profiles?.find(
-    (p) => p.network === 'LinkedIn',
-  )?.url;
-
-  return (
-    <DescriptionBox>
-      Experience on a wide variety of products and teams: Startups, SaaS,
-      Internal tooling, and client work. Fully remote for the past 4 years.
+const HistorySummary: React.FC<HistorySummaryProps> = ({ linkedInUrl }) => (
+  <Card>
+    Experience on a wide variety of products and teams: Startups, SaaS, Internal
+    tooling, and client work. Fully remote for the past 4 years.
+    {linkedInUrl && (
       <div className="sm:flex sm:space-x-4 sm:space-y-0 items-center justify-center space-y-4">
         <a
           href={linkedInUrl}
@@ -31,8 +25,8 @@ const HistorySummary: React.FC = () => {
           </div>
         </a>
       </div>
-    </DescriptionBox>
-  );
-};
+    )}
+  </Card>
+);
 
 export default HistorySummary;

@@ -14,3 +14,5 @@ The main goal here is to get some basic info on a static page while creating a p
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Flowbite React](https://flowbite-react.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [React Simple Maps](https://www.react-simple-maps.io/)
+  - With data from [Natural-Earth-Vector](https://github.com/nvkelso/natural-earth-vector/tree/master)

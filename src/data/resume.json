@@ -12,7 +12,8 @@
       "postalCode": "14213",
       "city": "Buffalo",
       "countryCode": "US",
-      "region": "NY"
+      "region": "NY",
+      "coordinates": [-78.878056, 42.886389]
     },
     "profiles": [
       {
@@ -63,7 +64,8 @@
         "Jira",
         "Confluence",
         "GSuite",
-        "Builder.io"
+        "Builder.io",
+        "styled components"
       ],
       "startDate": "2023-05-22",
       "endDate": "2024-01-10",
@@ -115,7 +117,8 @@
         "Shopify",
         "Azure Blob Storage - OAuth",
         "Snowflake",
-        "Google Maps"
+        "Google Maps",
+        "CSS Modules"
       ],
       "startDate": "2020-08-17",
       "endDate": "2023-01-05",
@@ -168,7 +171,10 @@
         "Azure Blob Storage",
         "Azure Storage Queues",
         "Azure Table Storage",
-        "Mailchimp"
+        "Mailchimp",
+        "Visual Studio",
+        "Visual Studio Team Services",
+        "Resharper"
       ],
       "startDate": "2015-12-14",
       "endDate": "2020-08-14",

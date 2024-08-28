@@ -23,7 +23,7 @@ import {
 import { RiFirebaseFill, RiTailwindCssFill } from 'react-icons/ri';
 import { TbBrandAzure } from 'react-icons/tb';
 
-import DescriptionBox from 'components/DescriptionBox';
+import { Card } from 'flowbite-react';
 import data from 'data/index';
 
 const icons = [
@@ -58,7 +58,7 @@ const SkillsSummary: React.FC = () => {
   }
 
   return (
-    <DescriptionBox>
+    <Card>
       Specializing on frontend work in React and Typescript for the past 7
       years, prior to that was all full stack in a few different languages.
       <div className="flex flex-wrap justify-center gap-5">
@@ -66,10 +66,11 @@ const SkillsSummary: React.FC = () => {
           <span key={title}>{icon({ size: '2em', title })}</span>
         ))}
       </div>
-    </DescriptionBox>
+    </Card>
   );
 };
 
 // TODO add link to skills section once the section is added
+// TODO pull from json?
 
 export default SkillsSummary;
