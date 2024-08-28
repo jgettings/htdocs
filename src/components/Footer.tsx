@@ -40,6 +40,5 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-// TODO fix spacing on avatar popup
 
 export default Footer;
