@@ -2,28 +2,21 @@ import { Flowbite } from 'flowbite-react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import ScrollPages from 'components/ScrollPages';
 import Basics from 'pages/Basics';
+import ScrollPages from 'components/ScrollPages';
+import ResumeTimeline from 'pages/ResumeTimeline';
 import theme from './flowbite-theme';
 
 const App: React.FC = () => (
   <Flowbite theme={{ theme }}>
     <ParallaxProvider>
       <Header />
-      {import.meta.env.MODE === 'development' ? (
-        <main>
-          <ScrollPages>
-            <Basics />
-            <div>Resume Timeline</div>
-          </ScrollPages>
-        </main>
-      ) : (
-        <main className="mt-12">
-          {/* <ScrollPages> */}
+      <main>
+        <ScrollPages>
           <Basics />
-          {/* </ScrollPages> */}
-        </main>
-      )}
+          <ResumeTimeline />
+        </ScrollPages>
+      </main>
       <Footer />
     </ParallaxProvider>
   </Flowbite>

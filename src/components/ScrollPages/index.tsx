@@ -1,19 +1,19 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import ScrollPromptIcon from './ScrollPromptIcon';
+// import ScrollPromptIcon from './ScrollPromptIcon';
 import { tw } from '../../tailwindUtils';
 
 type ScrollPagesProps = {
   children: React.ReactNode[];
 };
 
-const classes = tw`md:h-[calc(100vh_-_6.25rem)]`;
+const classes = tw`mb-12 md:min-h-[calc(100vh_-_6.25rem)]`;
 
 const ScrollPages: React.FC<ScrollPagesProps> = ({ children }) => (
   <div>
-    <div className={classes}>
+    {/* <div className={classes}>
       <ScrollPromptIcon />
-    </div>
+    </div> */}
     {children.map((child, i) => (
       <div key={i} className={classes}>
         {child}

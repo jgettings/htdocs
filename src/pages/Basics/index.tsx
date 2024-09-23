@@ -17,7 +17,7 @@ const Basics: React.FC = () => {
 
   return (
     <section className="flex flex-col items-center">
-      {/* <h2 className="sr-only">Basics</h2> */}
+      <h2 className="sr-only">Basics</h2>
 
       <FactsSummary basics={basics} />
       <Card>{basics.summary}</Card>
