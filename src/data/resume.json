@@ -7,7 +7,7 @@
     "image": "https://jgettings.github.io/images/avatar.jpg",
     "email": "jennifer.wystup@gmail.com",
     "url": "https://jgettings.github.io",
-    "summary": "Experienced Full Stack Developer with over 15 years of expertise in developing robust and accessible B2B SAAS web applications in startups and small teams. Strong focus on quality and adding tooling to ensure consistent quality and improvements.",
+    "summary": "Dynamic senior full-stack engineer with 17 years of experience specializing in React, TypeScript, and GraphQL. Proven success in driving accessibility improvements and cutting development time by automating repetitive tasks while improving team cohesion.",
     "location": {
       "postalCode": "14213",
       "city": "Buffalo",
@@ -36,237 +36,341 @@
   "work": [
     {
       "name": "Wagmo",
+      "icon": "wagmo.svg",
+      "iconDark": "wagmo-white.svg",
       "position": "Senior Engineer",
       "url": "https://wagmo.io/",
       "location": "Remote",
-      "summary": "Pet insurance company selling wellness and insurance products to individual consumers directly and to employers as employee benefits.",
-      "stack": [
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Recoil",
-        "React Testing Library",
-        "Jest",
-        "Cypress",
-        "Formik",
-        "Yup",
-        "React Query",
-        "Storybook",
-        "CSS",
-        "JavaScript",
-        "Concourse CI",
-        "Sentry",
-        "GCP",
-        "Firebase",
-        "MUI",
-        "Tailwind CSS",
-        "Github",
-        "Jira",
-        "Confluence",
-        "GSuite",
-        "Builder.io",
-        "styled components"
-      ],
+      "summary": "Growth-stage Pet insurance startup selling wellness and insurance products to individual consumers directly and to employers as part of their employee benefits. Working almost completely on the frontend but also comfortable jumping into the API code to make minor changes as needed.",
+      "skills": {
+        "primary": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Recoil",
+          "React Testing Library",
+          "Jest",
+          "Cypress",
+          "Formik",
+          "Yup",
+          "React Query",
+          "Storybook",
+          "CSS",
+          "JavaScript",
+          "MUI",
+          "Tailwind CSS",
+          "styled components"
+        ],
+        "tools": [
+          "Github",
+          "Jira",
+          "Confluence",
+          "GSuite",
+          "Concourse CI",
+          "Sentry",
+          "GCP",
+          "Firebase",
+          "Figma",
+          "Miro"
+        ],
+        "other": ["Builder.io", "Ghost blog", "Python", "Django"]
+      },
       "startDate": "2023-05-22",
       "endDate": "2024-01-10",
       "highlights": [
         "Working primarily on the front-end with React, TypeScript, Tailwind CSS, and NextJS",
-        "Improved accessibility across the platform to better conform to WAI-ARIA standards",
-        "Led effort to add end to end tests through the most important user flows, saving time on each release without sacrificing confidence",
-        "Facilitated improved communications within the engineering team with iterative process improvements",
-        "OKR to reduce cluttered error logs and fix longstanding bugs in the process"
+        "Facilitated improved communications within the engineering team with iterative process improvements via retrospectives. Encouraging more automated testing, and more discussion before and during implementation of features",
+        "Architected end-to-end tests through critical product flows, saving development time on each release while also significantly improving confidence",
+        "Improved accessibility across the platform to better conform to WAI-ARIA standards and general useability",
+        "Spearheaded a campaign to reduce cluttered error logs and fix longstanding bugs in the process"
+      ],
+      "projects": [
+        "Redesign - converted ghost blog to new design independently with minimal design specs and instruction",
+        "Builder.io - jumped in at the end of the project to help manually test and wrap up development on the redesign",
+        "Cypress tests - Led effort to move tests that always should've been unit tests to Jest so they'd run faster. Created new e2e tests through critical flows to speed up development process and eliminate the ocurrences of terrible bugs",
+        "A11y - Mentored other developers in improving the accessibility of the entire product. Added tooling to help catch accessibility improvements early in feature development. Push towards using semantic html and browser APIs where possible.",
+        "Add a pet",
+        "Multi pet?",
+        "Onboard quiz?"
       ]
     },
     {
       "name": "Crisp",
+      "icon": "crisp.svg",
       "position": "Software Engineer",
       "url": "https://www.gocrisp.com/",
       "location": "Remote",
-      "summary": "Helping to reduce food waste by surfacing supply chain data to companies that need it to determine production and shipping needs.",
-      "stack": [
-        "Apollo GraphQL",
-        "Highcharts",
-        "CSS",
-        "JavaScript",
-        "React Testing Library",
-        "React.js",
-        "Cypress.io",
-        "TypeScript",
-        "Kotlin",
-        "WCAG",
-        "Jest",
-        "Microsoft FluentUI",
-        "Microsoft Excel Add-In",
-        "ESLint",
-        "Create React App",
-        "Storybook",
-        "GCP",
-        "FullStory",
-        "Pendo",
-        "Launch Darkly",
-        "Segment",
-        "DataDog",
-        "Github",
-        "Jira",
-        "Confluence",
-        "Notion",
-        "GSuite",
-        "Postgres",
-        "Kubernetes",
-        "Integrations:",
-        "Shopify",
-        "Azure Blob Storage - OAuth",
-        "Snowflake",
-        "Google Maps",
-        "CSS Modules"
-      ],
+      "summary": "Growth-stage SaaS Startup. Helping to reduce food waste by surfacing supply chain data to companies that need it to determine production and shipping needs. Working almost completely on the frontend but also comfortable jumping into the API code to make minor changes as needed.",
+      "skills": {
+        "primary": [
+          "Apollo GraphQL",
+          "Highcharts",
+          "React Testing Library",
+          "React Hook Form",
+          "React.js",
+          "TypeScript",
+          "Jest",
+          "Microsoft FluentUI",
+          "Microsoft Excel Add-In",
+          "ESLint",
+          "Create React App",
+          "Storybook",
+          "CSS Modules",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Reakit"
+        ],
+        "tools": [
+          "GCP",
+          "FullStory",
+          "Pendo",
+          "Launch Darkly",
+          "Segment",
+          "DataDog",
+          "Github",
+          "Jira",
+          "Confluence",
+          "Notion",
+          "GSuite"
+        ],
+        "other": [
+          "Cypress.io",
+          "Postgres",
+          "Kubernetes",
+          "Kotlin",
+          "Shopify",
+          "Azure Blob Storage - OAuth",
+          "Snowflake",
+          "Google Maps"
+        ]
+      },
       "startDate": "2020-08-17",
       "endDate": "2023-01-05",
       "highlights": [
         "Working primarily on the front-end with React, TypeScript, and GraphQL",
+        "Found a way to combine a POC effort with some existing functionality to wrap up the POC much faster with a much more complete feature set",
         "Improved observability of major business functionality with a new UI to track status and diagnose issues by working with stakeholders and iterating on various designs",
-        "Created UIs to allow users to connect to third-party systems using OAuth and other third party APIs",
-        "Helped build a Microsoft Excel Add-In with Fluent UI React so that users could more easily access their data on any operating system",
-        "Built public @gocrisp/store-locator npm package so that client companies could use their data to more efficiently create a store locator on their websites"
+        "Created new UIs to allow users to connect to third-party systems using OAuth and other third party APIs",
+        "Built a new Microsoft Excel Add-In with Microsoft's Fluent UI React, enabling cross-platform data access for users and increasing product adoption",
+        "Built a new public `@gocrisp/store-locator` npm package so that client companies could seamlessly use data from Crisp on their own websites."
+      ],
+      "projects": [
+        "A11y - is this the same words as wagmo?",
+        "Storybook - added more plugins to help, stuff like that?",
+        "Eslint custom plugin",
+        "Move to RTL",
+        "Excel Add-in",
+        "OAuth - Azure blob storage, Snowflake, Shopify",
+        "More things on bytespout?",
+        "Inbound Data Status",
+        "Store Locator",
+        "Saved Reports",
+        "Quick Reports"
       ]
     },
     {
       "name": "Campus Labs",
+      "icon": "campuslabs.svg",
       "position": "Software Developer",
       "url": "https://www.anthology.com/",
       "location": "Buffalo, NY",
-      "summary": "Higher education software. Worked on the Course Evaluations product.",
-      "stack": [
-        ".NET Framework",
-        ".NET Core",
-        "Microsoft SQL Server",
-        "Azure",
-        "Azure DevOps",
-        "VSTS",
-        "Azure Application Insights",
-        "NHibernate",
-        "Entity Framework",
-        "Backbone.js",
-        "AngularJS",
-        "React.js",
-        "Redux",
-        "Enzyme",
-        "Mocha",
-        "TypeScript",
-        "React Query",
-        "Gulp",
-        "Grunt",
-        "Webpack",
-        "ESLint",
-        "Bootstrap",
-        "Azure Functions",
-        "React Testing Library",
-        "C#",
-        "Jest",
-        "Azure Functions",
-        "Azure Service Bus Queues",
-        "Azure Blob Storage",
-        "jQuery",
-        "Launch Darkly",
-        "Azure Blob Storage",
-        "Azure Storage Queues",
-        "Azure Table Storage",
-        "Mailchimp",
-        "Visual Studio",
-        "Visual Studio Team Services",
-        "Resharper"
-      ],
+      "summary": "Higher education software from a well-established startup. Worked on the Course Evaluations product as a full stack developer.",
+      "skills": {
+        "primary": [
+          ".NET Framework",
+          ".NET Core",
+          "Microsoft SQL Server",
+          "NHibernate",
+          "Entity Framework",
+          "Backbone.js",
+          "AngularJS",
+          "React.js",
+          "Redux",
+          "Enzyme",
+          "Mocha",
+          "TypeScript",
+          "React Query",
+          "Gulp",
+          "Grunt",
+          "Webpack",
+          "ESLint",
+          "Bootstrap",
+          "React Testing Library",
+          "C#",
+          "Jest",
+          "jQuery",
+          "Jasmine"
+        ],
+        "tools": [
+          "VSTS",
+          "Azure",
+          "Azure DevOps",
+          "Azure Application Insights",
+          "Launch Darkly",
+          "Mailchimp",
+          "Visual Studio",
+          "Visual Studio Team Services",
+          "VSCode",
+          "Resharper"
+        ],
+        "other": [
+          "Azure Blob Storage",
+          "Azure Storage Queues",
+          "Azure Table Storage",
+          "Azure Functions",
+          "Azure Service Bus Queues",
+          "Azure Blob Storage"
+        ]
+      },
       "startDate": "2015-12-14",
       "endDate": "2020-08-14",
       "highlights": [
-        "Lead member of the Course Evaluations development team",
+        "Lead member of the Course Evaluations development team, working on everything from survey building to data collection from students and reporting results to faculty and administrators.",
         "Developed and implemented a new front-end architecture using React and Redux to iteratively move away from Backbone.js and AngularJS",
-        "Working across the full stack with .NET Framework, .NET Core, and Azure products including hosting, DevOps, Azure Functions and ServiceBus.",
-        "Led the team in adding more automated testing across the entire product using NUnit, Jasmine, Jest, and some custom scripts to create useful test data for manual testing"
+        "Worked across the full stack with .NET Framework, .NET Core, and Azure products including hosting, DevOps, Azure Functions and ServiceBus.",
+        "Led the team in continually adding more automated testing across the entire product using NUnit, Jasmine, Jest, and some custom scripts to create useful test data for better manual testing"
+      ],
+      "projects": [
+        "Mailing",
+        "Permissions",
+        "New reporting in React",
+        "Rewrite FE from Backbone to Angular JS",
+        ""
       ]
     },
     {
       "name": "Studio, LLC",
+      "icon": "studio.webp",
+      "iconDark": "studio-white.webp",
       "position": "Senior Software Developer",
       "url": "https://www.studiolabs.com/",
       "location": "Buffalo, NY",
-      "summary": "Agency doing development work for small businesses. Microsites in wordpress and small ecommerce or other webapps.",
-      "stack": [
-        "PHP",
-        "Wordpress",
-        "Android Native",
-        "Symfony2",
-        "JavaScript",
-        "jQuery",
-        "Bootstrap",
-        "CSS",
-        "MySQL",
-        "Jenkins",
-        "SSH"
-      ],
+      "summary": "Agency doing development work for small businesses based in Buffalo and NYC. Microsites in wordpress and small ecommerce webapps and mobile apps.",
+      "skills": {
+        "primary": [
+          "PHP",
+          "Wordpress",
+          "Android Native",
+          "Symfony2",
+          "JavaScript",
+          "jQuery",
+          "Bootstrap",
+          "CSS",
+          "MySQL"
+        ],
+        "tools": [
+          "Jenkins",
+          "SSH",
+          "Digital Ocean",
+          "Google Analytics",
+          "Jira",
+          "Confluence",
+          "Bitbucket",
+          "Git"
+        ],
+        "other": ["Drupal"]
+      },
       "startDate": "2014-09-29",
       "endDate": "2015-12-11",
       "highlights": [
-        "Lead Developer on multiple concurrent projects, helping to improve legacy projects and mentor junior developers and interns",
+        "Lead Developer on multiple concurrent projects while mentoring junior developers and interns",
         "Working with a wide variety of languages and libraries, from native Android apps to wordpress-based microsites and Symfony-based webapps.",
-        "Led an initiative to standardize build tools across many projects that were very disjointed, either using no build tools or different tools per project, with the ultimate goal of making it so that anyone can easily pick up a project.",
-        "Implemented a Definition of Done across all projects to help standardize and improve development processes, including requiring code reviews to keep each other accountable. This has been a small part of a larger attempt at working together more as a team.",
-        "Helping to set up a Continuous Integration (Jenkins) server to run builds and deployments automatically, which has been a huge success in helping make sure tests are always run and makes deployments much easier."
+        "Significantly reduced context switching overhead for all developers by standardizing and improving build tools across all projects",
+        "Headed an initiative to leverage pull requests for all code changes, reducing bugs and spreading knowledge",
+        "Launched a new Jenkins server to ensure consistent releases and test runs"
+      ],
+      "projects": [
+        "KWG",
+        "PRPS",
+        "Kelton Global",
+        "Central Park Android App",
+        "Some hedge fund thing that never got implemented"
       ]
     },
     {
       "name": "LocalEdge",
+      "icon": "localedge.png",
+      "iconDark": "localedge-white.png",
       "position": "Software Developer II",
       "url": "https://localedge.com/",
       "location": "Buffalo, NY",
       "summary": "Digital media company owned by Hearst. Offering services for SEO, SMM, SEM, and custom websites to SMB customers. Mostly working on maintaining and creating internal tools to support these functions.",
-      "stack": [
-        "Java",
-        "Spring",
-        "Hibernate",
-        "Maven",
-        "JUnit",
-        "Backbone.js",
-        "AngularJS",
-        "Bootstrap",
-        "MongoDB",
-        "Oracle",
-        "CSS",
-        "jQuery",
-        "MySQL"
-      ],
+      "skills": {
+        "primary": [
+          "Java",
+          "JSP",
+          "Spring",
+          "Hibernate",
+          "JUnit",
+          "Backbone.js",
+          "AngularJS",
+          "Bootstrap",
+          "MongoDB",
+          "Oracle",
+          "CSS",
+          "jQuery",
+          "MySQL"
+        ],
+        "tools": [
+          "Jenkins",
+          "Artifactory",
+          "Maven",
+          "Jira",
+          "SVN",
+          "Balsamiq",
+          "Mercurial"
+        ],
+        "other": []
+      },
       "startDate": "2011-02-14",
       "endDate": "2014-09-26",
       "highlights": [
-        "Lead Developer on a small team for more than 1 year",
-        "Led an initiative to implement (Jasmine) unit tests in some javascript-heavy web apps, leading to less bugs and quicker development turnaround for maintenance tasks.",
+        "Led an initiative to add unit tests in some Backbone.js webapps using Jasmine which lead to fewer bugs and shorter development time",
         "Implemented new system for entering sales contracts using Twitter Bootstrap, AngularJS and MongoDB",
-        "Successfully implemented a complete rewrite of a resource-intensive legacy process by leveraging heavy use of characterization tests to ensure no regressions"
+        "Added internationalization to an existing public-facing webapp",
+        "Redesigned a public-facing webapp to be mobile-friendly and responsive"
+      ],
+      "projects": [
+        "Responsive Search",
+        "i18n Search",
+        "Contracts",
+        "What was that crud app?"
       ]
     },
     {
       "name": "Flexovit Abrasives",
+      "icon": "flexovit.webp",
       "position": "Applications Programmer",
       "url": "hhttps://www.flexovitabrasives.com/",
       "location": "Buffalo, NY",
-      "summary": "Manufacturing company for abrasive products, mainly grinding discs. Maintaining legacy systems.",
-      "stack": [
-        "COBOL",
-        "Java Applets",
-        "Linux",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "PHP",
-        "Java"
-      ],
+      "summary": "Manufacturing company for abrasive products, mainly grinding discs. Maintaining legacy systems for internal tools. Working on a very small IT team and occasionally helping on IT tasks in addition to primary role of maintaining applications.",
+      "skills": {
+        "primary": [
+          "COBOL",
+          "Java Applets",
+          "Linux",
+          "CSS",
+          "JavaScript",
+          "jQuery",
+          "PHP",
+          "Java",
+          "HTML"
+        ],
+        "tools": [],
+        "other": ["Linux", "Bash Scripting"]
+      },
       "startDate": "2007-06-25",
       "endDate": "2011-02-11",
       "highlights": [
         "Maintained legacy COBOL projects, adapting as necessary for the ever-changing needs of the business",
-        "Part of an overall effort to create more user-friendly webapps as an interface for the existing COBOL infrastructure",
-        "Handled many user support requests and various linux server maintenance as part of a very small IT team",
-        "Created a javadoc-style documentation parser for the COBOL source code"
+        "Led effort to create more user-friendly webapps as an interface for the existing COBOL infrastructure",
+        "Handled user support requests and various linux server maintenance as part of a very small IT team",
+        "Created a javadoc-style documentation parser for the COBOL source code while adding documentation to the codebase"
+      ],
+      "projects": [
+        "Press planning, drag and drop visual scheduler using PHP and jQuery",
+        "Documentation thing"
       ]
     }
   ],
@@ -298,8 +402,10 @@
     {
       "institution": "State University of New York at Fredonia",
       "url": "https://www.fredonia.edu/",
-      "area": "Computer Information Systems; Business; Mathematics",
-      "studyType": "Bachelor",
+      "area": "Computer Information Systems",
+      "studyType": "Bachelor of Science",
+      "secondaryArea": "Business Management",
+      "minorArea": "Mathematics",
       "startDate": "2002-07-01",
       "endDate": "2007-05-15",
       "score": "3.3"
@@ -307,9 +413,174 @@
   ],
   "skills": [
     {
+      "name": "React",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JS",
+        "React",
+        "ReactJS",
+        "Yarn",
+        "NPM",
+        "Storybook",
+        "React Testing Library",
+        "Jest",
+        "React Query",
+        "GraphQL",
+        "Apollo GraphQL",
+        "Recoil",
+        "Storybook",
+        "Webpack",
+        "Babel.js",
+        "eslint",
+        "prettier",
+        "CSS Modules",
+        "styled components",
+        "Material UI"
+      ]
+    },
+    {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JS",
+        "PHP",
+        "React",
+        "AngularJS",
+        "Backbone.js",
+        "Gulp",
+        "Grunt",
+        "Webpack",
+        "Babel",
+        "jQuery",
+        "SASS"
+      ]
+    },
+    {
+      "name": "Web Accessibility",
+      "level": "Advanced",
+      "keywords": [
+        "HTML",
+        "JavaScript",
+        "React",
+        "React Testing Library",
+        "eslint/jsx-a11y",
+        "WCAG"
+      ]
+    },
+    {
+      "name": "Agile",
+      "level": "Proficient",
+      "keywords": ["Jira", "Scrum", ""]
+    },
+    {
+      "name": "Automated Testing",
+      "level": "Master",
+      "keywords": [
+        "JavaScript",
+        "React",
+        "AngularJS",
+        "Jest",
+        "React Testing Library",
+        "Cypress",
+        "Jasmine",
+        "Karma",
+        "Mocha",
+        "jUnit",
+        "Mockito",
+        "what is the c# one called?",
+        "Selenium",
+        "Cucumber",
+        "SpecFlow",
+        "Storyshots",
+        "Snapshot testing"
+      ]
+    },
+    {
+      "name": "Devops - should I call this something else?",
+      "level": "Competent",
+      "keywords": [
+        "Azure",
+        "Azure DevOps",
+        "Visual Studio Team Services",
+        "Google Cloud Platform",
+        "GCP",
+        "Firebase",
+        "Kubernetes",
+        "Docker"
+      ],
+      "dev environment?": [
+        "Webpack",
+        "Babel",
+        "Create React App",
+        "NextJS",
+        "Gulp",
+        "Grunt",
+        "Gradle",
+        "Capistrano"
+      ],
+      "other tools?": [
+        "Pendo",
+        "Google Analytics",
+        "Launch Darkly",
+        "FullStory",
+        "Sentry",
+        "Segment",
+        "Maven",
+        "Artifactory"
+      ]
+    },
+    {
+      "name": "Third Party APIs",
+      "level": "Competent",
+      "keywords": ["Google Maps", "Shopify", "definitely more things here"]
+    },
+    {
+      "name": "Cloud",
+      "level": "Competent",
+      "keywords": [
+        "Azure Functions",
+        "Azure Table Storage",
+        "Azure Blob Storage",
+        "Azure ServiceBus Queue"
+      ]
+    },
+    {
+      "name": "API Development",
+      "level": "Advanced",
+      "keywords": [
+        "Java",
+        "C#",
+        ".NET Framework",
+        ".NET Core",
+        "Spring MVC",
+        "Hibernate",
+        "NHibernate",
+        "Java Servlets",
+        "JSP",
+        "Kotlin",
+        "Python",
+        "Django"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "Competent",
+      "keywords": ["Android Native", "Java", "React Native"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Home assistant? Automation/media server",
+      "startDate": "2019-01-01",
+      "description": "Description...",
+      "highlights": [""],
+      "url": "https://project.com/"
     }
   ],
   "languages": [
