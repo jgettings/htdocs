@@ -11,7 +11,7 @@ const App: React.FC = () => (
   <Flowbite theme={{ theme }}>
     <ParallaxProvider>
       <Header />
-      <main>
+      <main className="mt-8">
         <ScrollPages>
           <Basics />
           <ResumeTimeline />
