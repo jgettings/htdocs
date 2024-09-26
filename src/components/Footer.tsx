@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width: 768px)');
 
   return (
-    <footer className="p-8 text-center md:fixed md:bottom-8 md:left-8 md:z-10 md:p-0 md:text-left">
+    <footer className="p-8 text-center md:fixed md:bottom-8 md:left-8 md:z-30 md:p-0 md:text-left">
       <figure>
         <Popover
           placement={isDesktop ? 'right' : 'top'}
