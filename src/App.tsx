@@ -6,6 +6,7 @@ import Basics from 'pages/Basics';
 import ScrollPages from 'components/ScrollPages';
 import ResumeTimeline from 'pages/ResumeTimeline';
 import theme from './flowbite-theme';
+import Skills from 'pages/Skills';
 
 const App: React.FC = () => (
   <Flowbite theme={{ theme }}>
@@ -15,6 +16,7 @@ const App: React.FC = () => (
         <ScrollPages>
           <Basics />
           <ResumeTimeline />
+          <Skills />
         </ScrollPages>
       </main>
       <Footer />

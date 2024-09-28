@@ -7,7 +7,7 @@ import ResumeTimelineDates from './Dates';
 const logoWidth = 150;
 
 const ResumeTimeline: React.FC = () => (
-  <section>
+  <section id="resume-timeline">
     <ScrollPageHeading>Experience</ScrollPageHeading>
     <div className="z-0 flex flex-col items-center">
       <Timeline>
