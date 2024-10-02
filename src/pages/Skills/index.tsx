@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
       <Accordion className="m-4 mx-auto max-w-3xl" collapseAll>
         {data.skills.map((skill) => (
           <Accordion.Panel key={skill.name}>
-            <Accordion.Title>
+            <Accordion.Title as="h3">
               {skill.name && <SkillTitle name={skill.name} />}
               {skill.level && <LevelRating level={skill.level} />}
             </Accordion.Title>

@@ -442,7 +442,8 @@
         "Material UI",
         "Formik",
         "Yup",
-        "React Hook Form"
+        "React Hook Form",
+        "Builder.io"
       ]
     },
     {
@@ -517,9 +518,7 @@
         "Docker",
         "Git",
         "Github",
-        "Bitbucket"
-      ],
-      "dev environment?": [
+        "Bitbucket",
         "Webpack",
         "Babel",
         "Create React App",
@@ -531,15 +530,15 @@
         "Git",
         "Mercurial",
         "Maven",
-        "Artifactory"
-      ],
-      "other tools?": [
+        "Artifactory",
         "Pendo",
         "Google Analytics",
         "Launch Darkly",
         "FullStory",
         "Sentry",
-        "Segment"
+        "Segment",
+        "Vite",
+        "Launch Darkly"
       ]
     },
     {
@@ -549,7 +548,10 @@
         "Google Maps",
         "Shopify",
         "Slackbot",
-        "definitely more things here"
+        "OAuth",
+        "Firebase Authentication",
+        "Firebase Remote Config",
+        "Launch Darkly"
       ]
     },
     {
@@ -559,7 +561,10 @@
         "Azure Functions",
         "Azure Table Storage",
         "Azure Blob Storage",
-        "Azure ServiceBus Queue"
+        "Azure ServiceBus Queue",
+        "Azure Storage Queue",
+        "event-driven data processing",
+        "message queue"
       ]
     },
     {
@@ -587,7 +592,14 @@
     {
       "name": "Mobile Development",
       "level": "Competent",
-      "keywords": ["Android Native", "Java", "React Native"]
+      "keywords": [
+        "Android Native",
+        "Java",
+        "React Native",
+        "Gradle",
+        "Google Play Store",
+        "Google Maps API"
+      ]
     }
   ],
   "projects": [

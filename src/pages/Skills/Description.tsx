@@ -9,10 +9,29 @@ type SkillDescriptionProps = {
 };
 
 const markdownComponents: Components = {
+  // a11y lint rules disabled here because they are requiring content,
+  // which we don't have until these are used
   p(props) {
     const { node, ...rest } = props;
-
     return <p className="mb-4" {...rest} />;
+  },
+  h4(props) {
+    const { node, ...rest } = props;
+    return <h4 className="mb-2 mt-6 text-xl" {...rest} />; // eslint-disable-line jsx-a11y/heading-has-content
+  },
+  li(props) {
+    const { node, ...rest } = props;
+    return <li className="list-inside list-disc" {...rest} />;
+  },
+  ul(props) {
+    const { node, ...rest } = props;
+    return <ul className="mb-4" {...rest} />;
+  },
+  a(props) {
+    const { node, ...rest } = props;
+    return (
+      <a className="text-sky-600 hover:underline dark:text-sky-500" {...rest} /> // eslint-disable-line jsx-a11y/anchor-has-content
+    );
   },
 };
 
