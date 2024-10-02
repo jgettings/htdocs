@@ -422,6 +422,8 @@
         "JS",
         "React",
         "ReactJS",
+        "Redux",
+        "Reakit",
         "Yarn",
         "NPM",
         "Storybook",
@@ -431,14 +433,16 @@
         "GraphQL",
         "Apollo GraphQL",
         "Recoil",
-        "Storybook",
         "Webpack",
         "Babel.js",
-        "eslint",
-        "prettier",
+        "ESLint",
+        "Prettier",
         "CSS Modules",
-        "styled components",
-        "Material UI"
+        "Styled Components",
+        "Material UI",
+        "Formik",
+        "Yup",
+        "React Hook Form"
       ]
     },
     {
@@ -449,6 +453,7 @@
         "CSS",
         "JavaScript",
         "JS",
+        "Twitter Bootstrap",
         "PHP",
         "React",
         "AngularJS",
@@ -470,13 +475,9 @@
         "React",
         "React Testing Library",
         "eslint/jsx-a11y",
-        "WCAG"
+        "WCAG",
+        "VoiceOver"
       ]
-    },
-    {
-      "name": "Agile",
-      "level": "Proficient",
-      "keywords": ["Jira", "Scrum", ""]
     },
     {
       "name": "Automated Testing",
@@ -493,16 +494,17 @@
         "Mocha",
         "jUnit",
         "Mockito",
-        "what is the c# one called?",
         "Selenium",
         "Cucumber",
         "SpecFlow",
         "Storyshots",
-        "Snapshot testing"
+        "Snapshot testing",
+        "NUnit",
+        "XUnit"
       ]
     },
     {
-      "name": "Devops - should I call this something else?",
+      "name": "Devops",
       "level": "Competent",
       "keywords": [
         "Azure",
@@ -512,7 +514,10 @@
         "GCP",
         "Firebase",
         "Kubernetes",
-        "Docker"
+        "Docker",
+        "Git",
+        "Github",
+        "Bitbucket"
       ],
       "dev environment?": [
         "Webpack",
@@ -522,7 +527,11 @@
         "Gulp",
         "Grunt",
         "Gradle",
-        "Capistrano"
+        "Capistrano",
+        "Git",
+        "Mercurial",
+        "Maven",
+        "Artifactory"
       ],
       "other tools?": [
         "Pendo",
@@ -530,18 +539,21 @@
         "Launch Darkly",
         "FullStory",
         "Sentry",
-        "Segment",
-        "Maven",
-        "Artifactory"
+        "Segment"
       ]
     },
     {
       "name": "Third Party APIs",
       "level": "Competent",
-      "keywords": ["Google Maps", "Shopify", "definitely more things here"]
+      "keywords": [
+        "Google Maps",
+        "Shopify",
+        "Slackbot",
+        "definitely more things here"
+      ]
     },
     {
-      "name": "Cloud",
+      "name": "Cloud Native",
       "level": "Competent",
       "keywords": [
         "Azure Functions",
@@ -565,7 +577,11 @@
         "JSP",
         "Kotlin",
         "Python",
-        "Django"
+        "Django",
+        "Swagger",
+        "REST",
+        "GraphQL",
+        "Apollo GraphQL"
       ]
     },
     {

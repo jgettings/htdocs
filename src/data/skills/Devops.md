@@ -1,0 +1,3 @@
+- I always try to fix any local setup things or automations that will make my life easier and hopefully help others as well
+- Campus labs azure
+- Being at startups for the past 4 years I've also wound up having some ownership over other tooling as well...
