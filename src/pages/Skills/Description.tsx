@@ -36,7 +36,7 @@ const markdownComponents: Components = {
 };
 
 const textFetcher = (name: string): Promise<string> =>
-  import(/* @vite-ignore */ `/src/data/skills/${name}.md`).then(
+  import(`../../data/skills/${name}.md`).then(
     (md: { markdown: string }) => md.markdown,
   );
 
