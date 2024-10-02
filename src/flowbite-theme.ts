@@ -12,7 +12,7 @@ const theme: CustomFlowbiteTheme = {
         base: 'aspect-square object-cover border-2 border-white',
       },
       size: {
-        xl: 'w-60',
+        xl: 'w-60 md:w-40 xl:w-60',
       },
     },
   },
@@ -29,6 +29,18 @@ const theme: CustomFlowbiteTheme = {
     img: {
       horizontal: {
         on: 'w-full rounded-b-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-r-lg',
+      },
+    },
+  },
+  accordion: {
+    root: {
+      base: 'divide-y divide-gray-200 border-gray-200 dark:divide-gray-700 dark:border-gray-700 bg-white dark:bg-gray-800',
+    },
+    title: {
+      base: 'flex w-full items-center justify-between p-5 text-left font-medium text-gray-500 first:rounded-t-lg last:rounded-b-lg dark:text-gray-400',
+      heading: 'flex w-full gap-2 justify-between',
+      flush: {
+        off: 'hover:bg-gray-100 dark:hover:bg-gray-800',
       },
     },
   },

@@ -20,7 +20,7 @@ const ScrollPageHeading: React.FC<HeadingProps> = ({ children }) => {
 
   return (
     // height is 0 to not overlap the page header
-    <div className="top-11 z-30 mx-auto mb-20 mt-10 flex h-0 w-full justify-center md:sticky">
+    <div className="top-11 z-30 mx-auto mb-32 mt-10 flex h-0 w-full justify-center md:sticky">
       <Parallax
         // Make it so that it is smaller when it's over the page header so we don't cover buttons
         scaleX={[1, 0]}
