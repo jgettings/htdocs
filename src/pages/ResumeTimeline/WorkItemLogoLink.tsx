@@ -1,7 +1,7 @@
-import { ResumeProfile } from 'data';
+import { WorkItem } from 'data';
 
 type WorkItemLogoLinkProps = {
-  work: NonNullable<ResumeProfile['work']>[0];
+  work: WorkItem;
 };
 
 const logoWidth = 150;

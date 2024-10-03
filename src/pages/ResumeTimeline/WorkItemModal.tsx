@@ -1,4 +1,4 @@
-import { ResumeProfile } from 'data';
+import { WorkItem } from 'data';
 import { Button, List, Modal } from 'flowbite-react';
 import KeywordsPipeList from 'components/KeywordsPipeList';
 import React from 'react';
@@ -6,7 +6,7 @@ import WorkItemLogoLink from './WorkItemLogoLink';
 import ResumeTimelineDates from './Dates';
 
 type WorkItemModalProps = {
-  work: NonNullable<ResumeProfile['work']>[0];
+  work: WorkItem;
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 };

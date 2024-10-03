@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { PiBuildingOfficeFill } from 'react-icons/pi';
 import { Timeline, Card, Button } from 'flowbite-react';
-import { ResumeProfile } from 'data';
+import { WorkItem } from 'data';
 import ResumeTimelineDates from './Dates';
 import WorkItemModal from './WorkItemModal';
 import WorkItemLogoLink from './WorkItemLogoLink';
 
 type WorkTimelineItemProps = {
-  work: NonNullable<ResumeProfile['work']>[0];
+  work: WorkItem;
 };
 
 const WorkTimelineItem: React.FC<WorkTimelineItemProps> = ({ work }) => {

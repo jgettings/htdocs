@@ -32,5 +32,6 @@ const AdditionalFields = z.object({
 const fullSchema = z.intersection(ResumeSchema, AdditionalFields);
 
 export type ResumeProfile = z.infer<typeof fullSchema>;
+export type WorkItem = NonNullable<ResumeProfile['work']>[0];
 
 export default fullSchema.parse(resume);
