@@ -23,22 +23,28 @@ const EducationTimelineItem: React.FC<EducationTimelineItemProps> = ({
         <Timeline.Title className="flex flex-col justify-between gap-6 md:flex-row">
           <div>
             {education.studyType}
-            <div className="font-light italic">{education.institution}</div>
+            <div className="font-light italic">
+              <a href={education.url}>{education.institution}</a>
+            </div>
           </div>
           <div className="flex-none">
             <a href={education.url}>
-              <img
-                alt={`${education.name} logo`}
-                src={`/images/school-icons/${education.name.toLowerCase()}-dark.svg`}
-                width={logoWidth}
-                className="hidden dark:inline"
-              />
-              <img
-                alt={`${education.name} logo`}
-                src={`/images/school-icons/${education.name.toLowerCase()}.svg`}
-                width={logoWidth}
-                className="inline dark:hidden"
-              />
+              {education.name ? (
+                <>
+                  <img
+                    alt={`${education.name} logo`}
+                    src={`/images/school-icons/${education.name.toLowerCase()}-dark.svg`}
+                    width={logoWidth}
+                    className="hidden dark:inline"
+                  />
+                  <img
+                    alt={`${education.name} logo`}
+                    src={`/images/school-icons/${education.name.toLowerCase()}.svg`}
+                    width={logoWidth}
+                    className="inline dark:hidden"
+                  />
+                </>
+              ) : null}
             </a>
           </div>
         </Timeline.Title>

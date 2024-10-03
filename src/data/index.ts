@@ -12,7 +12,7 @@ const AdditionalFields = z.object({
   }),
   education: z.array(
     z.object({
-      name: z.string(),
+      name: z.string().optional(),
     }),
   ),
 });
