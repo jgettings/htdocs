@@ -409,7 +409,14 @@
       "minorArea": "Mathematics",
       "startDate": "2002-07-01",
       "endDate": "2007-05-15",
-      "score": "3.3"
+      "score": "3.3",
+      "skills": [
+        "C++",
+        "Java",
+        "Visual Basic",
+        "PHP",
+        "Data Structures & Algorithms"
+      ]
     }
   ],
   "skills": [

@@ -1,5 +1,5 @@
 import { PiBuildingOfficeFill } from 'react-icons/pi';
-import { Timeline, Card } from 'flowbite-react';
+import { Timeline, Card, Button } from 'flowbite-react';
 import { ResumeProfile } from 'data';
 import ResumeTimelineDates from './Dates';
 
@@ -43,7 +43,7 @@ const WorkTimelineItem: React.FC<WorkTimelineItemProps> = ({ work }) => (
           </div>
         </Timeline.Title>
         <Timeline.Body>{work.summary}</Timeline.Body>
-        {/* <Button>Read more</Button> */}
+        <Button>Read more</Button>
       </Card>
     </Timeline.Content>
   </Timeline.Item>

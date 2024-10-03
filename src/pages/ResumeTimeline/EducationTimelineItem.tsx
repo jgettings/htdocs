@@ -1,6 +1,7 @@
 import { MdSchool } from 'react-icons/md';
 import { Timeline, Card } from 'flowbite-react';
 import { ResumeProfile } from 'data';
+import KeywordsPipeList from 'components/KeywordsPipeList';
 import ResumeTimelineDates from './Dates';
 
 type EducationTimelineItemProps = {
@@ -49,7 +50,7 @@ const EducationTimelineItem: React.FC<EducationTimelineItemProps> = ({
           </div>
         </Timeline.Title>
         <Timeline.Body>
-          <ul>
+          <ul className="mb-4">
             <li>
               <strong>Major:</strong> {education.area}
             </li>
@@ -63,6 +64,7 @@ const EducationTimelineItem: React.FC<EducationTimelineItemProps> = ({
               <strong>GPA:</strong> {education.score}
             </li>
           </ul>
+          <KeywordsPipeList keywords={education.skills} />
         </Timeline.Body>
       </Card>
     </Timeline.Content>
