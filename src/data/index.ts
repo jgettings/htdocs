@@ -10,6 +10,17 @@ const AdditionalFields = z.object({
       coordinates: z.tuple([z.number(), z.number()]).optional(),
     }),
   }),
+  work: z.array(
+    z.object({
+      skills: z
+        .object({
+          primary: z.array(z.string()).optional(),
+          tools: z.array(z.string()).optional(),
+          other: z.array(z.string()).optional(),
+        })
+        .optional(),
+    }),
+  ),
   education: z.array(
     z.object({
       name: z.string().optional(),

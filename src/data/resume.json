@@ -78,7 +78,7 @@
       "startDate": "2023-05-22",
       "endDate": "2024-01-10",
       "highlights": [
-        "Working primarily on the front-end with React, TypeScript, Tailwind CSS, and NextJS",
+        "Working primarily on the front-end with React, TypeScript, Tailwind CSS, and NextJS while occasionally hopping into the Python/Django backend to help with minor changes.",
         "Facilitated improved communications within the engineering team with iterative process improvements via retrospectives. Encouraging more automated testing, and more discussion before and during implementation of features",
         "Architected end-to-end tests through critical product flows, saving development time on each release while also significantly improving confidence",
         "Improved accessibility across the platform to better conform to WAI-ARIA standards and general useability",
@@ -140,7 +140,7 @@
           "Kubernetes",
           "Kotlin",
           "Shopify",
-          "Azure Blob Storage - OAuth",
+          "Azure Blob Storage",
           "Snowflake",
           "Google Maps"
         ]
@@ -148,7 +148,7 @@
       "startDate": "2020-08-17",
       "endDate": "2023-01-05",
       "highlights": [
-        "Working primarily on the front-end with React, TypeScript, and GraphQL",
+        "Working primarily on the front-end with React, TypeScript, and GraphQL while occasionally hopping into the Kotlin backend to help with minor changes.",
         "Found a way to combine a POC effort with some existing functionality to wrap up the POC much faster with a much more complete feature set",
         "Improved observability of major business functionality with a new UI to track status and diagnose issues by working with stakeholders and iterating on various designs",
         "Created new UIs to allow users to connect to third-party systems using OAuth and other third party APIs",
@@ -320,8 +320,7 @@
           "SVN",
           "Balsamiq",
           "Mercurial"
-        ],
-        "other": []
+        ]
       },
       "startDate": "2011-02-14",
       "endDate": "2014-09-26",
@@ -357,7 +356,6 @@
           "Java",
           "HTML"
         ],
-        "tools": [],
         "other": ["Linux", "Bash Scripting"]
       },
       "startDate": "2007-06-25",
