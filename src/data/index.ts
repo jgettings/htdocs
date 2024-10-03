@@ -10,6 +10,11 @@ const AdditionalFields = z.object({
       coordinates: z.tuple([z.number(), z.number()]).optional(),
     }),
   }),
+  education: z.array(
+    z.object({
+      name: z.string(),
+    }),
+  ),
 });
 
 const fullSchema = z.intersection(ResumeSchema, AdditionalFields);

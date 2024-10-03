@@ -18,7 +18,7 @@ const WorkTimelineItem: React.FC<WorkTimelineItemProps> = ({ work }) => (
           startDate={work.startDate as string}
           endDate={work.endDate as string}
         />
-        <Timeline.Title className="flex flex-col justify-between gap-2 md:flex-row">
+        <Timeline.Title className="flex flex-col justify-between gap-6 md:flex-row">
           <div>
             {work.position}
             <div className="font-light italic">{work.name}</div>

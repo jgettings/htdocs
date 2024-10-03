@@ -400,6 +400,7 @@
   ],
   "education": [
     {
+      "name": "Fredonia",
       "institution": "State University of New York at Fredonia",
       "url": "https://www.fredonia.edu/",
       "area": "Computer Information Systems",
@@ -533,7 +534,6 @@
         "Artifactory",
         "Pendo",
         "Google Analytics",
-        "Launch Darkly",
         "FullStory",
         "Sentry",
         "Segment",
