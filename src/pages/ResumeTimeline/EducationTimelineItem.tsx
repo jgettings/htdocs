@@ -1,11 +1,11 @@
 import { MdSchool } from 'react-icons/md';
 import { Timeline, Card } from 'flowbite-react';
-import { ResumeProfile } from 'data';
+import { EducationItem } from 'data';
 import KeywordsPipeList from 'components/KeywordsPipeList';
 import ResumeTimelineDates from './Dates';
 
 type EducationTimelineItemProps = {
-  education: NonNullable<ResumeProfile['education']>[0];
+  education: EducationItem;
 };
 
 const logoWidth = 150;

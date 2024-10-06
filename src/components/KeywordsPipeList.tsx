@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { twMerge } from 'tailwind-merge';
 
 type KeywordsPipeListProps = {
@@ -17,10 +18,10 @@ const KeywordsPipeList: React.FC<KeywordsPipeListProps> = ({
       className={twMerge('text-gray-500 dark:text-gray-400', className)}
       {...rest}
     >
-      {keywords.sort().map((k) => (
+      {keywords.sort().map((k, i) => (
         <li
           className="inline after:content-['_|_'] last:after:content-none"
-          key={k}
+          key={`${k}-${i}`}
         >
           {k}
         </li>

@@ -67,6 +67,7 @@ module.exports = {
     'object-curly-newline': 'off',
     'react/jsx-indent': 'off',
     '@typescript-eslint/indent': 'off',
+    'react/jsx-curly-newline': 'off',
   },
   overrides: [
     {

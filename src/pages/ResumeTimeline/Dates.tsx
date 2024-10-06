@@ -1,5 +1,4 @@
 import { format } from 'date-fns';
-import { Timeline } from 'flowbite-react';
 import { twMerge } from 'tailwind-merge';
 
 const dateFormat = 'LLL d, yyyy';
@@ -15,17 +14,25 @@ const ResumeTimelineDates: React.FC<ResumeTimelineDatesProps> = ({
   startDate,
   endDate,
 }) => (
-  <div
+  <span
     className={twMerge('inline text-gray-400 dark:text-gray-500', className)}
   >
-    <Timeline.Time dateTime={startDate} className={className}>
+    {/* Timeline.Time except make it context agnostic */}
+    <time
+      dateTime={startDate}
+      className={twMerge('mb-1 text-sm font-normal leading-none', className)}
+    >
       {format(startDate, dateFormat)}
-    </Timeline.Time>{' '}
+    </time>{' '}
     -{' '}
-    <Timeline.Time dateTime={endDate} className={className}>
+    <time
+      dateTime={endDate}
+      className={twMerge('mb-1 text-sm font-normal leading-none', className)}
+    >
+      {' '}
       {format(endDate, dateFormat)}
-    </Timeline.Time>
-  </div>
+    </time>
+  </span>
 );
 
 export default ResumeTimelineDates;

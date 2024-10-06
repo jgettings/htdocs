@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import { PiBuildingOfficeFill } from 'react-icons/pi';
 import { Timeline, Card, Button } from 'flowbite-react';
 import { WorkItem } from 'data';
+import CarouselContext from 'components/Carousel/Context';
 import ResumeTimelineDates from './Dates';
-import WorkItemModal from './WorkItemModal';
 import WorkItemLogoLink from './WorkItemLogoLink';
 
 type WorkTimelineItemProps = {
@@ -11,7 +11,7 @@ type WorkTimelineItemProps = {
 };
 
 const WorkTimelineItem: React.FC<WorkTimelineItemProps> = ({ work }) => {
-  const [showModal, setShowModal] = useState(false);
+  const { setSelectedByKey } = useContext(CarouselContext);
 
   return (
     <Timeline.Item key={work.name}>
@@ -33,12 +33,7 @@ const WorkTimelineItem: React.FC<WorkTimelineItemProps> = ({ work }) => {
             </div>
           </Timeline.Title>
           <Timeline.Body>{work.summary}</Timeline.Body>
-          <Button onClick={() => setShowModal(true)}>Read more</Button>
-          <WorkItemModal
-            work={work}
-            isOpen={showModal}
-            setIsOpen={setShowModal}
-          />
+          <Button onClick={() => setSelectedByKey(work.name)}>Read more</Button>
         </Card>
       </Timeline.Content>
     </Timeline.Item>
