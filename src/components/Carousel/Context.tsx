@@ -10,7 +10,6 @@ type CarouselContextProps = {
 };
 
 type CarouselContextType = {
-  currentIndex: number | null;
   currentItem: ListItem | null;
   setSelectedByKey: (key: string | undefined) => void;
   unsetSelected: () => void;
@@ -23,7 +22,6 @@ type CarouselContextType = {
 };
 
 const CarouselContext = createContext<CarouselContextType>({
-  currentIndex: null,
   currentItem: null,
   setSelectedByKey: () => {},
   unsetSelected: () => {},
@@ -61,7 +59,6 @@ export const CarouselContextProvider: React.FC<CarouselContextProps> = ({
 
   const context = useMemo(
     () => ({
-      currentIndex: selectedIndex,
       currentItem: selectedIndex === null ? null : items[selectedIndex],
       setSelectedByKey: (key: string | undefined) =>
         setSelectedIndex(key === undefined ? null : itemsByKeyField[key]),
