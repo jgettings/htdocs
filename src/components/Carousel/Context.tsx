@@ -65,17 +65,11 @@ export const CarouselContextProvider: React.FC<CarouselContextProps> = ({
       unsetSelected: () => setSelectedIndex(null),
       hasNext,
       navigateNext: () => setSelectedIndex((i) => (i === null ? null : i + 1)),
-      nextLabel:
-        selectedIndex === null || selectedIndex > items.length - 1
-          ? ''
-          : getNavLabel(items[selectedIndex + 1]),
+      nextLabel: hasNext ? getNavLabel(items[selectedIndex + 1]) : '',
       hasPrevious,
       navigatePrevious: () =>
         setSelectedIndex((i) => (i === null ? null : i - 1)),
-      previousLabel:
-        selectedIndex === null || selectedIndex < 1
-          ? ''
-          : getNavLabel(items[selectedIndex - 1]),
+      previousLabel: hasPrevious ? getNavLabel(items[selectedIndex - 1]) : '',
     }),
     [getNavLabel, hasNext, hasPrevious, items, itemsByKeyField, selectedIndex],
   );
